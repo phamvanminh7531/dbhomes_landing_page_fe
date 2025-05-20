@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400; /* Regular */
 }
 
 body, html {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 400; /* Regular */
+
 }
 
 .navbar {
@@ -23,10 +24,11 @@ body, html {
   align-items: center;
   padding: 0 40px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  padding-top: 20px
 }
 
 .logo img {
-  height: 30px;
+  height: 60px;
 }
 
 .nav-links a {
@@ -41,26 +43,60 @@ body, html {
   opacity: 0.85;
 }
 
+
 .hero-section {
-  width: 100%;
+  position: relative;
   height: 100vh;
-  background-image: url('../images/section1bg.png');
+  color: white;
+  font-weight: 400;
+
+  display: flex;
+  align-items: flex-end; /* đẩy content xuống dưới */
+  justify-content: flex-start; /* căn trái */
+  padding: 50px 60px;
+  overflow: hidden;
+}
+.main-content-container {
+  position: relative; /* để nằm trên z-index mặc định */
+  z-index: 1;
+}
+/* swiper container làm nền full cover và nằm dưới */
+.background-swiper {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* từng slide ảnh nền full cover */
+.background-swiper > swiper-slide {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  color: white;
+  width: 100%;
+  height: 100%;
 }
 
-.hero-content {
-  position: absolute;
-  bottom: 50px;
-  left: 60px;
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px 20px;
+  }
 }
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px 15px;
+  }
+}
+
 
 .hero-content h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 
@@ -77,12 +113,12 @@ body, html {
   transition: all 0.3s ease;
 }
 
-.btn.primary {
+.btn.secondary {
   background-color: white;
-  color: #333;
+  color: #96422F;
 }
 
-.btn.secondary {
+.btn.primary {
   background-color: transparent;
   border: 1px solid white;
   color: white;
@@ -194,13 +230,7 @@ body, html {
 /* section 2*/
 /* Base styles */
 .highlighted-projects {
-  background: repeating-linear-gradient(
-    to right,
-    #FFF3E3,
-    #FFF3E3 40px,
-    #f6ebdd 40px,
-    #f6ebdd 80px
-  );
+  background-color: #FFF3E3;
   color: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -221,25 +251,27 @@ body, html {
   color: #96422F;
   font-size: 14px;
   margin-bottom: 10px;
-  text-transform: uppercase;
   width:70%;
-    text-align: center;
+  text-align: center;
+
 }
 
 .section-title {
   font-size: 36px;
   color: #43230C;
   margin-bottom: 10px;
-  width:70%;
+  width:100%;
   text-align: center;
+  font-weight: 600;
 }
 
 .section-desc {
   color: #4F3C22;
   margin-bottom: 40px;
-  font-size: 16px;
-  width:70%;
+  font-size: 13px;
+  width:60%;
   text-align: center;
+   white-space: pre-line;
 }
 
  swiper-container {
@@ -259,7 +291,7 @@ swiper-slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .custom-pagination {
@@ -359,7 +391,7 @@ swiper-slide img {
   padding: 80px 20px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
+  min-height: 150vh;
   color: #4B3B39;
   padding: 60px;
   display: flex;
@@ -383,10 +415,12 @@ swiper-slide img {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
+  color:#43230C;
 }
 
 .about-section .title span {
   color: #96422F;
+  font-weight: bold;
 }
 
 .about-section .desc {
@@ -426,6 +460,7 @@ swiper-slide img {
   grid-template-columns: repeat(2, 1fr); /* 2 cột */
   gap: 40px;
   margin-top: 20px;
+  width: 45%
 }
 
 .about-section .stat-box .number {
@@ -486,17 +521,8 @@ swiper-slide img {
 .partners-section {
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  background: repeating-linear-gradient(
-    to right,
-    #FFF3E3,
-    #FFF3E3 40px,
-    #f6ebdd 40px,
-    #f6ebdd 80px
-  );
+  background-color: #FFF3E3;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  background-position: 1px 0;
 }
 
 .partners-section .title {
@@ -576,18 +602,11 @@ swiper-slide img {
 }
 /*section 5*/
 .services-section {
+  background-color: #FFF3E3;
 
- background: repeating-linear-gradient(
-    to right,
-    #FFF3E3,
-    #FFF3E3 40px,
-    #f6ebdd 40px,
-    #f6ebdd 80px
-  );
-  background-position: 1px 0;
   padding: 80px 20px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+
 }
 
 .services-section .container {
@@ -620,9 +639,14 @@ swiper-slide img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
-
+@media (max-width: 768px) {
+  .services-section .service-grid {
+    justify-content: center;
+  }
+}
 .services-section .service-card {
   background-color: #8C795F; /* màu nâu mờ */
   border-radius: 12px;
@@ -641,6 +665,10 @@ swiper-slide img {
   font-size: 30px;
   margin-bottom: 20px;
   color: #fff;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-section .service-card h3 {
@@ -658,28 +686,30 @@ swiper-slide img {
 }
 /*section 6*/
 .dbverse-section {
-  /* background-color: #FFF3E3;
-  background-image: repeating-linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0.15) 40px,
-    transparent 40px,
-    transparent 80px
-  ); */
-  
- background: repeating-linear-gradient(
-    to right,
-    #FFF3E3,
-    #FFF3E3 40px,
-    #f6ebdd 40px,
-    #f6ebdd 80px
-  );
+  background-color: #FFF3E3;
   background-position: 1px 0;
   padding: 100px 0;
 }
+.section--gradient {
+  position: relative;
+  background-color: #FFF3E3;
+  padding: 100px 0;
+  overflow: hidden; /* tránh tràn nội dung từ ::before */
+}
+
+.section--gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px; /* chiều cao gradient bạn muốn */
+background-image: linear-gradient(to bottom, rgb(255 255 255 / 35%) 0%, rgb(255 255 255 / 69%) 10%, rgb(255 255 255 / 6%) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
 
 .dbverse-section .container {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -704,7 +734,7 @@ swiper-slide img {
 
 .dbverse-block .text-content h3 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.4;
   color: #5b2c0f;
   margin-bottom: 16px;
@@ -752,13 +782,13 @@ swiper-slide img {
 
 .ecosystem-title {
   font-size: 32px;
-  color: #fff;
+  color: #FFF7EC;
   margin-bottom: 10px;
   font-weight: 300;
 }
 
 .ecosystem-desc {
-  color: #fff;
+  color: #FFF7EC;
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 60px;
@@ -778,12 +808,12 @@ swiper-slide img {
 .circle {
   width: 200px;
   height: 200px;
-  border: 2px solid #fff;
+  border: 2px solid #FFF7EC;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #FFF7EC;
   font-weight: 300;
   font-size: 16px;
   background: transparent;
@@ -834,15 +864,10 @@ swiper-slide img {
 }
 /*section 8*/
 .feedback-news-section {
- background: repeating-linear-gradient(
-    to right,
-    #FFF3E3,
-    #FFF3E3 40px,
-    #f6ebdd 40px,
-    #f6ebdd 80px
-  );
+
+  background-color: #FFF3E3;
   padding: 60px 20px;
-  font-family: 'Arial', sans-serif;
+
 }
 
 .feedback-news-section__container {
@@ -855,6 +880,7 @@ swiper-slide img {
   font-size: 32px;
   color: #4a2c15;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .feedback-news-section__feedbacks {
@@ -901,6 +927,7 @@ swiper-slide img {
   font-size: 24px;
   margin-bottom: 20px;
   color: #4a2c15;
+  font-weight: 600;
 }
 .feedback-news-section__news-header {
   display: flex;
@@ -1005,7 +1032,7 @@ swiper-slide img {
 
 .contact-section__title {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 40px;
   line-height: 1.4;
 }
@@ -1268,4 +1295,14 @@ swiper-slide img {
     padding-top: 8px;
     text-align: left; /* ✅ */
   }
+}
+.main-content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+.navbar .main-content-container{
+  display: flex;
+  justify-content: space-between;
 }
