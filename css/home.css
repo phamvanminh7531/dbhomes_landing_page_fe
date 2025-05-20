@@ -44,7 +44,7 @@ body, html {
 .hero-section {
   width: 100%;
   height: 100vh;
-  background-image: url('/images/section1bg.png');
+  background-image: url('/dbhomes_landing_page_fe/images/section1bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -352,7 +352,7 @@ swiper-slide img {
 
 .about-section {
   position: relative;
-  background-image: url('/images/section3bg.png');
+  background-image: url('/dbhomes_landing_page_fe/images/section3bg.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -986,7 +986,7 @@ swiper-slide img {
 
 /*section9*/
 .contact-section {
-  background-image: url('/images/Section9bg.png'); /* 👉 thay link ảnh ở đây */
+  background-image: url('/dbhomes_landing_page_fe//images/Section9bg.png'); 
   background-size: cover;
   background-position: center;
   position: relative;
