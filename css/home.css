@@ -1229,7 +1229,9 @@ background-image: linear-gradient(to bottom, rgb(255 255 255 / 35%) 0%, rgb(255 
     flex-direction: column;
     gap: 24px;
   }
-
+  .footer-db-offices strong{
+    font-weight: 500;
+  }
   .footer-db-brand,
   .footer-db-links,
   .footer-db-contact,
