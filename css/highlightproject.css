@@ -1,0 +1,149 @@
+.highlighted-projects {
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url('../images//bg.png');
+  background-repeat: repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.section-subtitle {
+  color: #96422F;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width:70%;
+  text-align: center;
+
+}
+
+.section-title {
+  font-size: 36px;
+  color: #43230C;
+  margin-bottom: 10px;
+  width:100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-desc {
+  color: #4F3C22;
+  margin-bottom: 40px;
+  font-size: 13px;
+  width:60%;
+  text-align: center;
+   white-space: pre-line;
+}
+
+ swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  
+}
+
+swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #C8B497;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #96422F;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  padding: 0;
+  border: 1px solid #43230C;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #43230C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;  /* giúp căn giữa dọc */
+  transition: border-color 0.3s, color 0.3s;
+  font-weight: 300;
+}
+
+
+.arrow:hover {
+  border-color: #555;
+  color: #000;
+}
+
+
+
+/* Nút chuyển */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prev-btn {
+  left: -10px;
+}
+
+.next-btn {
+  right: -10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 80%;
+  }
+
+  .project-card.active {
+    transform: scale(1.05);
+  }
+
+  .nav-btn {
+    font-size: 20px;
+  }
+}

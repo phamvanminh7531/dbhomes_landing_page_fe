@@ -1,0 +1,88 @@
+.dbverse-section {
+ background-image: url('../images//bg.png');
+  background-repeat: repeat;
+  background-position: 1px 0;
+  padding: 100px 0;
+}
+.section--gradient {
+  position: relative;
+  background-color: #FFF3E3;
+  padding: 100px 0;
+  overflow: hidden; /* tránh tràn nội dung từ ::before */
+}
+
+.section--gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px; /* chiều cao gradient bạn muốn */
+background-image: linear-gradient(to bottom, rgb(255 255 255 / 35%) 0%, rgb(255 255 255 / 69%) 10%, rgb(255 255 255 / 6%) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dbverse-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.dbverse-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+
+.dbverse-block .text-content {
+  flex: 1 1 50%;
+  max-width: 550px;
+}
+
+.dbverse-block .text-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #5b2c0f;
+  margin-bottom: 16px;
+}
+
+.dbverse-block .text-content h3 span {
+  font-weight: 700;
+  color: #a33b24;
+}
+
+.dbverse-block .text-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.dbverse-block .image-content {
+  flex: 1 1 45%;
+}
+
+.dbverse-block .image-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.app-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.app-buttons img {
+  height: 40px;
+  object-fit: contain;
+}

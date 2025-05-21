@@ -1,0 +1,89 @@
+.ecosystem-section {
+  background-color: #c8b497;
+  padding: 100px 20px;
+  text-align: center;
+  
+}
+
+.ecosystem-title {
+  font-size: 50px;
+  color: #FFF7EC;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.ecosystem-desc {
+  color: #FFF7EC;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0; /* Xóa khoảng cách */
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Hình tròn có margin âm để chồng lên nhau */
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #FFF7EC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF7EC;
+  font-weight: 300;
+  font-size: 16px;
+  background: transparent;
+  margin-left: -25px; /* chồng lấn vào hình trước */
+}
+
+.circle:first-child {
+  margin-left: 0; /* hình đầu tiên không bị đẩy vào trái */
+}
+@media (max-width: 768px) {
+  .circle-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 0;
+    position: relative;
+    width: 320px; /* 160*2 */
+    margin: 0 auto;
+  }
+
+  .circle {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    /* giữ nguyên background, font, border-radius nếu bạn đã có */
+    position: relative;
+  }
+
+  .circle:nth-child(1) {
+    transform: translate(-15px, -15px);
+    z-index: 4;
+  }
+
+  .circle:nth-child(2) {
+    transform: translate(15px, -15px);
+    z-index: 3;
+  }
+
+  .circle:nth-child(3) {
+    transform: translate(-15px, 15px);
+    z-index: 2;
+  }
+
+  .circle:nth-child(4) {
+    transform: translate(15px, 15px);
+    z-index: 1;
+  }
+}

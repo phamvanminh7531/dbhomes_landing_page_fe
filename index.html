@@ -8,6 +8,15 @@
   <meta name="description"
     content="Better Living - Công ty DB Homes chuyên cung cấp dự án bất động sản và dịch vụ chất lượng cao." />
   <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/highlightproject.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/partner.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/feedback.css" />
+  <link rel="stylesheet" href="css/ecosystem.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dbverse.css" />
   <link rel="icon" href="./images/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
@@ -46,30 +55,26 @@
     </div>
   </header>
 
-<section class="hero-section">
-  <!-- Swiper container chỉ chứa ảnh nền, full cover và nằm dưới -->
-  <swiper-container
-    class="background-swiper"
-    effect="fade"
-    speed="1000"
-    pagination="true" pagination-dynamic-bullets="true"
-  >
-    <swiper-slide style="background-image: url('/images/section1bg.png')"></swiper-slide>
-    <swiper-slide style="background-image: url('/images/section3bg.png')"></swiper-slide>
-    <swiper-slide style="background-image: url('/images/section1bg.png')"></swiper-slide>
-  </swiper-container>
+  <section class="hero-section">
+    <!-- Swiper container chỉ chứa ảnh nền, full cover và nằm dưới -->
+    <swiper-container class="background-swiper" effect="fade" speed="1000" pagination="true"
+      pagination-dynamic-bullets="true">
+      <swiper-slide style="background-image: url('images/section1bg.png')"></swiper-slide>
+      <swiper-slide style="background-image: url('images/section3bg.png')"></swiper-slide>
+      <swiper-slide style="background-image: url('images/section1bg.png')"></swiper-slide>
+    </swiper-container>
 
-  <!-- Nội dung cố định, nằm trên ảnh nền -->
-  <div class="main-content-container">
-    <div class="hero-content">
-      <h1>Better Living</h1>
-      <div class="buttons">
-        <a href="#" class="btn primary">Xem dự án</a>
-        <a href="#" class="btn secondary">Về chúng tôi</a>
+    <!-- Nội dung cố định, nằm trên ảnh nền -->
+    <div class="main-content-container">
+      <div class="hero-content">
+        <h1>Better Living</h1>
+        <div class="buttons">
+          <a href="#" class="btn primary">Xem dự án</a>
+          <a href="#" class="btn secondary">Về chúng tôi</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <section class="highlighted-projects">
@@ -85,7 +90,7 @@
           <swiper-slide><img src="images/project2.png" alt="Project 1" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/project1.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/project3.png" alt="Project 3" loading="lazy" /></swiper-slide>
-                    <swiper-slide><img src="images/project2.png" alt="Project 1" loading="lazy" /></swiper-slide>
+          <swiper-slide><img src="images/project2.png" alt="Project 1" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/project1.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/project3.png" alt="Project 3" loading="lazy" /></swiper-slide>
         </swiper-container>
@@ -94,7 +99,7 @@
           <span class="dot" data-index="0"></span>
           <span class="dot" data-index="1"></span>
           <span class="dot" data-index="2"></span>
-           <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="3"></span>
           <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
         </div>
       </div>
@@ -291,7 +296,7 @@
           <swiper-slide><img src="images/fb1.png" alt="Project 1" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb2.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb3.png" alt="Project 3" loading="lazy" /></swiper-slide>
-           <swiper-slide><img src="images/fb1.png" alt="Project 1" loading="lazy" /></swiper-slide>
+          <swiper-slide><img src="images/fb1.png" alt="Project 1" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb2.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb3.png" alt="Project 3" loading="lazy" /></swiper-slide>
         </swiper-container>
@@ -300,7 +305,7 @@
           <span class="dot" data-index="0"></span>
           <span class="dot" data-index="1"></span>
           <span class="dot" data-index="2"></span>
-                    <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="3"></span>
           <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
         </div>
 
@@ -362,8 +367,7 @@
 
             <button class="footer-db-download">
               Hồ sơ năng lực
-              <!-- Đảm bảo bạn đã thêm FontAwesome CDN vào <head> -->
-              <i class="fas fa-arrow-down footer-db-download-icon"></i>
+           <img src="images/downloadicon.png" alt="db homes logo" class="footer-db-download-icon" loading="lazy" style="width: 25px;" />
 
 
             </button>
@@ -389,7 +393,7 @@
                 <p>Số 40 Đường số 52, Khu phố 6, P. Thạnh Mỹ Lợi, TP. Thủ Đức, TP. HCM</p>
               </div>
               <div>
-               <strong style="font-weight: 600;">Văn phòng Hà Nội</strong>
+                <strong style="font-weight: 600;">Văn phòng Hà Nội</strong>
                 <p>Số 42A, Lô Nhà Vườn, KĐT Mới Việt Hưng, P. Giang Biên, Q. Long Biên, TP. Hà Nội</p>
               </div>
             </div>

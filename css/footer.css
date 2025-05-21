@@ -1,0 +1,223 @@
+.footer-db {
+  background-color: #893f2e;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-db-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-db-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-db-brand,
+.footer-db-links,
+.footer-db-info,
+.footer-db-contact {
+  flex: 1;
+  min-width: 220px;
+  
+}
+.footer-db-brand, .footer-db-info{
+  display :flex;
+  flex-direction: column;
+}
+.footer-db-info{
+  gap:20px
+}
+
+.footer-db-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-db-tagline {
+  margin: 8px 0;
+}
+
+.footer-db-download {
+  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center; /* ✅ Căn giữa theo trục dọc */
+  padding: 8px 16px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  line-height: 1; /* ✅ Tránh text bị lệch do line-height lớn */
+}
+
+.footer-db-download img {
+  display: block; /* ✅ Loại bỏ khoảng trắng dưới ảnh */
+  width: 25px;
+  height:25px
+}
+
+.footer-db-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-db-links li {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.footer-db-offices > div {
+  margin-bottom: 12px;
+}
+
+.footer-db-socials {
+  margin-top: 20px;
+}
+
+.footer-db-socials p {
+  margin-bottom: 10px;
+}
+
+.footer-db-icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer-db-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-db-member {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer-db-member-logo img {
+  height: 60px;
+}
+
+.footer-db-bottom {
+  margin-top: 30px;
+}
+
+.footer-db-contact p {
+  margin: 5px 0;
+}
+
+.footer-db-contact strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-db-socials a {
+  display: inline-block;
+}
+
+.footer-db-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+/* ==== Default styles for desktop are assumed to be already defined ==== */
+
+/* ==== Responsive Footer Styles ==== */
+@media (max-width: 768px) {
+  .footer-db {
+    padding: 24px 16px;
+  }
+
+  .footer-db-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-db-top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-db-offices strong{
+    font-weight: 500;
+  }
+  .footer-db-brand,
+  .footer-db-links,
+  .footer-db-contact,
+  .footer-db-socials,
+  .footer-db-member {
+    width: 100%;
+    text-align: left; /* ✅ Canh lề trái */
+  }
+.footer-db-brand{
+  display: flex;
+  flex-direction: column;
+}
+  .footer-db-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    width:160px;
+  }
+
+  .footer-db-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-db-links ul li {
+    margin: 6px 0;
+  }
+
+  .footer-db-contact > div {
+    margin-bottom: 12px;
+  }
+
+  .footer-db-icons {
+    display: flex;
+    justify-content: flex-start; /* ✅ Các icon cũng canh trái */
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .footer-db-member-logo img {
+    max-width: 180px;
+  }
+
+  .footer-db-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-db-copyright {
+    font-size: 12px;
+    margin-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 8px;
+    text-align: left; /* ✅ */
+  }
+}
