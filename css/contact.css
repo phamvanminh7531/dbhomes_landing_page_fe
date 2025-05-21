@@ -1,15 +1,17 @@
 .contact-section {
   background-image: url('../images/Section9bg.png');
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Phóng ảnh để vừa khít cả khung */
+  background-repeat: no-repeat;
+  background-position: bottom center; /* Ưu tiên giữ phần dưới của ảnh */
   position: relative;
   padding: 100px 20px;
   color: white;
   font-family: sans-serif;
-  height: 150vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 

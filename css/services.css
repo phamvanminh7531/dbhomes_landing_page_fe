@@ -3,7 +3,11 @@
   background-repeat: repeat;
   padding: 80px 20px;
   text-align: center;
-
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .services-section .container {

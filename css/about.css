@@ -3,13 +3,12 @@
 .about-section {
   position: relative;
   background-image: url('../images/section3bg.png');
+  background-size: cover; /* Phóng ảnh để vừa khít cả khung */
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: bottom center; 
   padding: 80px 20px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  min-height: 150vh;
+  min-height: 100vh;
   color: #4B3B39;
   padding: 60px;
   display: flex;

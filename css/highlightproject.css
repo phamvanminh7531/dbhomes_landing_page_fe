@@ -4,16 +4,26 @@
   text-align: center;
   background-image: url('../images//bg.png');
   background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.highlighted-projects .main-content-container {
+  max-width: none;
+  width: 100%;
+ 
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  width:100%;
 }
 
 .section-subtitle {
@@ -28,39 +38,54 @@
 .section-title {
   font-size: 36px;
   color: #43230C;
-  margin-bottom: 10px;
-  width:100%;
+  width: 100%;
   text-align: center;
   font-weight: 600;
+  margin: 0; /* Reset cả margin trên & dưới */
+  padding: 0; /* (Tùy chọn) Nếu có padding */
 }
 
 .section-desc {
   color: #4F3C22;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-size: 13px;
   width:60%;
   text-align: center;
    white-space: pre-line;
 }
 
- swiper-container {
+
+.highlighted-projects swiper-container {
   width: 100%;
   height: auto;
 }
 
-swiper-slide {
+.highlighted-projectss swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
-  
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
 }
-
-swiper-slide img {
+.highlighted-projects swiper-slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Slide trung tâm */
+.highlighted-projects swiper-slide.swiper-slide-active img {
+
+  z-index: 2;
+  border-radius: 10px;
+}
+
+/* Slide hai bên */
+.highlighted-projects swiper-slide:not(.swiper-slide-active) img {
+  transform: scale(0.9);
 }
 
 .custom-pagination {
