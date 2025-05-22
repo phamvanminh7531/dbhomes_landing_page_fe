@@ -131,6 +131,11 @@
   color: #4a2c15;
   cursor: pointer;
 }
+.feedback-news-section__view-all:hover {
+    background-color: #96422F;
+
+  color: white;
+}
 .feedback-news-section swiper-slide {
   background-color: #ffffff;
   border-radius: 12px;

@@ -28,7 +28,7 @@
   display: block;
   font-size: 52px;
   font-weight: bold;
-  color: #702828;
+  color: #96422F;
 }
 
 .vision__stat p {
@@ -53,16 +53,10 @@
 
 .vision__text h2 {
   font-size: 48px;
-  color: #8c2e1d;
+  color: #96422F;
   margin-bottom: 10px;
 }
 
-.vision__text h3 {
-  font-size: 20px;
-  color: #8c2e1d;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
 
 .vision__text p {
   font-size: 16px;

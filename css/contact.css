@@ -65,7 +65,9 @@
 }
 
 .contact-section__form button:hover {
-  background: #f2f2f2;
+   background-color: #96422F;
+
+  color: white;
 }
 @media (max-width: 768px) {
   .contact-section {

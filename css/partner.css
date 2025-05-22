@@ -110,3 +110,79 @@
     height: 15px;
   }
 }
+
+.partners-section .featured-projects {
+  margin-top: 40px;
+
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.partners-section .featured-projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.partners-section .featured-projects-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3e1c0a;
+}
+
+.partners-section .see-all-btn {
+  background: transparent;
+  border: 1px solid #3e1c0a;
+  color: #3e1c0a;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.partners-section .see-all-btn:hover {
+  background-color: #96422F;
+
+  color: white;
+}
+
+.partners-section .project-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partners-section .project-card {
+
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 280px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.partners-section .project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.partners-section .project-info {
+  padding-top: 5px;
+  color: #3e1c0a;
+}
+
+.partners-section .project-info h3 {
+
+  font-size: 18px;
+  color: #8a3b1b;
+}
+
+.partners-section .project-info p {
+  margin: 0;
+  font-size: 12ƯEZQqpx;
+}
