@@ -7,7 +7,7 @@
   padding: 100px 20px;
   color: white;
   font-family: sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
 .contact-section__form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+
 }
 
 .contact-section__form input,
@@ -42,7 +42,7 @@
   border-bottom: 1px solid #fff;
   color: white;
   font-size: 16px;
-  padding: 8px 0;
+  padding: 28px 0;
   outline: none;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .contact-section__form button {
-  margin-top: 20px;
+  margin-top: 60px;
   background: white;
   color: #8b4e2d;
   border: none;

@@ -140,30 +140,23 @@
 .feedback-news-section swiper-container {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  height:350px
 }
 .feedback-news-section swiper-slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
-}
- swiper-container {
-  width: 100%;
-  height: auto;
+  height: 100%;
+       border-radius: 10px;
 }
 
-swiper-slide {
+
+.feedback-news-section swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   background: transparent;
-  
-}
+    height:300px;
+   box-shadow: 13px 21px 22.5px rgba(0, 0, 0, 0.05);
 
-swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
 }

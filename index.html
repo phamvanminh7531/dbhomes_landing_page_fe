@@ -175,8 +175,6 @@
             <swiper-slide><img src="images/pmh.png" alt="Đối tác 6" loading="lazy" /></swiper-slide>
             <swiper-slide><img src="images/cp.png" alt="Đối tác 7" loading="lazy" /></swiper-slide>
           </swiper-container>
-
-
           <!-- Thêm ảnh logo đối tác khác nếu cần -->
         </div>
         <div class="partners-banner">
@@ -292,7 +290,8 @@
     <div class="main-content-container">
       <div class="feedback-news-section__container">
         <h2 class="feedback-news-section__heading">Phản hồi từ khách hàng</h2>
-        <swiper-container class="mySwiper2" space-between="30" slides-per-view="3" centered-slides="false" init="true">
+       <swiper-container class="mySwiper2" space-between="30" slides-per-view="3" centered-slides="true" loop="true"
+          effect="slide" init="true">
           <swiper-slide><img src="images/fb1.png" alt="Project 1" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb2.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb3.png" alt="Project 3" loading="lazy" /></swiper-slide>
@@ -300,12 +299,14 @@
           <swiper-slide><img src="images/fb2.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb3.png" alt="Project 3" loading="lazy" /></swiper-slide>
         </swiper-container>
+   
         <div class="custom-pagination">
           <span class="arrow prev"><i class="fas fa-chevron-left"></i></span>
           <span class="dot" data-index="0"></span>
           <span class="dot" data-index="1"></span>
           <span class="dot" data-index="2"></span>
           <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
           <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
         </div>
 
@@ -350,7 +351,7 @@
             <input type="text" placeholder="Họ và Tên *" required />
             <input type="tel" placeholder="Số điện thoại *" required />
             <input type="text" placeholder="Tỉnh/Thành phố *" required />
-            <textarea placeholder="Nội dung yêu cầu" rows="4"></textarea>
+            <input placeholder="Nội dung yêu cầu" rows="4"></textarea>
             <button type="submit">Gửi yêu cầu</button>
           </form>
         </div>
