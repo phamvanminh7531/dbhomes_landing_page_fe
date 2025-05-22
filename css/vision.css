@@ -27,7 +27,7 @@
 .vision__stat strong {
   display: block;
   font-size: 52px;
-  font-weight: bold;
+  font-weight: 600;
   color: #96422F;
 }
 
@@ -55,6 +55,7 @@
   font-size: 48px;
   color: #96422F;
   margin-bottom: 10px;
+    font-weight: 600;
 }
 
 
