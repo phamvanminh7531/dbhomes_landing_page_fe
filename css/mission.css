@@ -1,0 +1,36 @@
+.mission-section {
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url('../images/missionbg.png');
+
+  /* ✅ Những dòng cần sửa hoặc thêm */
+  background-repeat: no-repeat;
+  background-size: cover; /* Phóng ảnh để phủ toàn bộ chiều ngang */
+  background-position: center;
+
+  min-height: 125vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.text-normal {
+  color: #333; /* màu chữ bình thường */
+}
+
+.text-highlight {
+  color: #96422F; /* màu riêng cho DBHOMES */
+}
+
+.mission-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}

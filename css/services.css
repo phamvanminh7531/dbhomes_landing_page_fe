@@ -1,9 +1,8 @@
 .services-section {
- background-image: url('../images//bg.png');
+  background-image: url('../images/bg.png');
   background-repeat: repeat;
   padding: 80px 20px;
   text-align: center;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,23 +42,69 @@
   justify-content: space-between;
   width: 100%;
 }
+
 @media (max-width: 768px) {
   .services-section .service-grid {
     justify-content: center;
   }
 }
+
 .services-section .service-card {
-  background-color: #8C795F; /* màu nâu mờ */
-  border-radius: 12px;
-  padding: 30px 20px;
+  position: relative;
   width: 300px;
-  box-sizing: border-box;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #8C795F;
   color: #FFF7EC;
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.services-section .service-card .card-front,
+.services-section .service-card .card-back {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: opacity 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.services-section .service-card .card-front {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  opacity: 1;
+}
+
+.services-section .service-card .card-back {
+  opacity: 0;
+  z-index: 1;
 }
 
 .services-section .service-card:hover {
-  transform: translateY(-5px);
+  background-color: transparent;
+}
+
+.services-section .service-card:hover .card-front {
+  opacity: 0;
+}
+
+.services-section .service-card:hover .card-back {
+  opacity: 1;
+  z-index: 3;
+}
+
+.services-section .service-card .card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .services-section .service-card .icon {
@@ -77,6 +122,7 @@
   margin-bottom: 10px;
   color: #fff;
   font-weight: 300;
+  text-align: center;
 }
 
 .services-section .service-card p {
@@ -84,4 +130,5 @@
   line-height: 1.5;
   color: #fff;
   font-weight: 300;
+  text-align: center;
 }

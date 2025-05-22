@@ -1,4 +1,3 @@
-
 .partners-section {
   padding: 60px 20px;
   text-align: center;
@@ -96,7 +95,7 @@
   .partners-logos img {
     flex: 1 1 100px;
     max-width: 100px;
-    height: 50px;
+    height: 15px;
   }
 }
 
@@ -108,6 +107,6 @@
 
   .partners-logos img {
     max-width: 120px;
-    height: 55px;
+    height: 15px;
   }
 }

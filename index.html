@@ -86,14 +86,99 @@
           Những căn hộ và ngôi nhà nổi bật, nơi thiết kế nội thất hòa quyện giữa thẩm mỹ
           và công năng, tạo nên tổ ấm khác biệt, đậm chất riêng.
         </p>
-        <swiper-container class="mySwiper" space-between="30" slides-per-view="3" centered-slides="true" loop="true"
-          effect="slide" init="true">
-          <swiper-slide><img src="images/project2.png" alt="Project 1" loading="lazy" /></swiper-slide>
-          <swiper-slide><img src="images/project1.png" alt="Project 2" loading="lazy" /></swiper-slide>
-          <swiper-slide><img src="images/project3.png" alt="Project 3" loading="lazy" /></swiper-slide>
-          <swiper-slide><img src="images/project2.png" alt="Project 1" loading="lazy" /></swiper-slide>
-          <swiper-slide><img src="images/project1.png" alt="Project 2" loading="lazy" /></swiper-slide>
-          <swiper-slide><img src="images/project3.png" alt="Project 3" loading="lazy" /></swiper-slide>
+              <swiper-container class="mySwiper" space-between="30" slides-per-view="1" centered-slides="true" loop="true"
+          effect="slide" init="true"   breakpoints='{"768":{"slidesPerView":3,"centeredSlides":true}}'>
+          
+          <swiper-slide>
+            <div class="slide-wrapper">
+              <img src="images/project1.png" alt="Project 1" loading="lazy" />
+              <div class="slide-info">
+                <div class="slide-title">The Breeze Of<br> Autumn | Define
+                </div>
+                <div class="slide-description">
+                  Dự án: DEFINE - Capitaland<br>
+                  Diện tích: 300 m² | 3PN<br>
+                  Phong cách: Modern Luxury<br>
+                  Thiết kế & Thi công nội thất: DBHomes
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-wrapper">
+              <img src="images/project3.png" alt="Project 3" loading="lazy" />
+              <div class="slide-info">
+                <div class="slide-title">Serene Luxe<br> Residence | Define
+                </div>
+                <div class="slide-description">
+                  Dự án: DEFINE - Capitaland<br>
+                  Diện tích: 300 m² | 3PN<br>
+                  Phong cách: Modern Luxury<br>
+                  Thiết kế & Thi công nội thất: DBHomes
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+             <swiper-slide>
+            <div class="slide-wrapper">
+              <img src="images/project2.png" alt="Project 2" loading="lazy" />
+              <div class="slide-info">
+                <div class="slide-title">The Still Whisper <br>
+                  Diamond Island</div>
+                <div class="slide-description">
+                  Dự án: DEFINE - Capitaland<br>
+                  Diện tích: 300 m² | 3PN<br>
+                  Phong cách: Modern Luxury<br>
+                  Thiết kế & Thi công nội thất: DBHomes
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-wrapper">
+              <img src="images/project1.png" alt="Project 1" loading="lazy" />
+              <div class="slide-info">
+                <div class="slide-title">The Breeze Of<br> Autumn | Define
+                </div>
+                <div class="slide-description">
+                  Dự án: DEFINE - Capitaland<br>
+                  Diện tích: 300 m² | 3PN<br>
+                  Phong cách: Modern Luxury<br>
+                  Thiết kế & Thi công nội thất: DBHomes
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-wrapper">
+              <img src="images/project3.png" alt="Project 3" loading="lazy" />
+              <div class="slide-info">
+                <div class="slide-title">Serene Luxe<br> Residence | Define
+                </div>
+                <div class="slide-description">
+                  Dự án: DEFINE - Capitaland<br>
+                  Diện tích: 300 m² | 3PN<br>
+                  Phong cách: Modern Luxury<br>
+                  Thiết kế & Thi công nội thất: DBHomes
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide-wrapper">
+              <img src="images/project2.png" alt="Project 2" loading="lazy" />
+              <div class="slide-info">
+                <div class="slide-title">The Still Whisper <br>
+                  Diamond Island</div>
+                <div class="slide-description">
+                  Dự án: DEFINE - Capitaland<br>
+                  Diện tích: 300 m² | 3PN<br>
+                  Phong cách: Modern Luxury<br>
+                  Thiết kế & Thi công nội thất: DBHomes
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
         </swiper-container>
 
         <div class="custom-pagination">
@@ -102,7 +187,7 @@
           <span class="dot" data-index="1"></span>
           <span class="dot" data-index="2"></span>
           <span class="dot" data-index="3"></span>
-          <span class="dot" data-index="44"></span>
+          <span class="dot" data-index="4"></span>
           <span class="dot" data-index="5"></span>
           <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
         </div>
@@ -183,7 +268,7 @@
       </div>
     </div>
   </section>
-  <section class="services-section">
+<section class="services-section">
     <div class="main-content-container">
       <div class="container">
         <p class="subtitle">Dịch vụ của chúng tôi</p>
@@ -195,33 +280,51 @@
 
         <div class="service-grid">
           <div class="service-card">
-            <div class="icon">
-              <img src="images/icon1.png" alt="Thiết kế icon" loading="lazy">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="icon">
+                  <img src="images/icon1.png" alt="Thiết kế icon" loading="lazy">
+                </div>
+                <h3>Thiết kế & Thi công nội thất</h3>
+                <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
+                  không gian sống tinh tế.</p>
+              </div>
+              <div class="card-back">
+                <img src="images/sv1.png" alt="Thiết kế nội thất" loading="lazy">
+              </div>
             </div>
-            <h3>Thiết kế & Thi công nội thất</h3>
-            <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
-              không
-              gian sống tinh tế.</p>
           </div>
 
           <div class="service-card">
-            <div class="icon">
-              <img src="images/icon2.png" alt="Thiết kế icon" loading="lazy">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="icon">
+                  <img src="images/icon2.png" alt="Thiết kế icon" loading="lazy">
+                </div>
+                <h3>Thi công nội thất</h3>
+                <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
+                  không gian sống tinh tế.</p>
+              </div>
+              <div class="card-back">
+                <img src="images/sv2.png" alt="Thi công nội thất" loading="lazy">
+              </div>
             </div>
-            <h3>Thi công nội thất</h3>
-            <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
-              không
-              gian sống tinh tế.</p>
           </div>
 
           <div class="service-card">
-            <div class="icon">
-              <img src="images/icon3.png" alt="Thiết kế icon" loading="lazy">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="icon">
+                  <img src="images/icon3.png" alt="Thiết kế icon" loading="lazy">
+                </div>
+                <h3>Cung cấp & Lắp đặt nội thất</h3>
+                <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
+                  không gian sống tinh tế.</p>
+              </div>
+              <div class="card-back">
+                <img src="images/sv3.png" alt="Lắp đặt nội thất" loading="lazy">
+              </div>
             </div>
-            <h3>Cung cấp & Lắp đặt nội thất</h3>
-            <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
-              không
-              gian sống tinh tế.</p>
           </div>
         </div>
       </div>
@@ -290,8 +393,8 @@
     <div class="main-content-container">
       <div class="feedback-news-section__container">
         <h2 class="feedback-news-section__heading">Phản hồi từ khách hàng</h2>
-       <swiper-container class="mySwiper2" space-between="30" slides-per-view="3" centered-slides="true" loop="true"
-          effect="slide" init="true">
+        <swiper-container class="mySwiper2" space-between="30" slides-per-view="1" centered-slides="true" loop="true"
+          effect="slide" init="true"   breakpoints='{"768":{"slidesPerView":3,"centeredSlides":true}}'>
           <swiper-slide><img src="images/fb1.png" alt="Project 1" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb2.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb3.png" alt="Project 3" loading="lazy" /></swiper-slide>
@@ -299,14 +402,14 @@
           <swiper-slide><img src="images/fb2.png" alt="Project 2" loading="lazy" /></swiper-slide>
           <swiper-slide><img src="images/fb3.png" alt="Project 3" loading="lazy" /></swiper-slide>
         </swiper-container>
-   
+
         <div class="custom-pagination">
           <span class="arrow prev"><i class="fas fa-chevron-left"></i></span>
           <span class="dot" data-index="0"></span>
           <span class="dot" data-index="1"></span>
           <span class="dot" data-index="2"></span>
           <span class="dot" data-index="3"></span>
-              <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="4"></span>
           <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
         </div>
 
@@ -440,6 +543,7 @@
   </section>
 
   <script src="./js/main.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 

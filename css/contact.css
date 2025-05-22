@@ -4,14 +4,14 @@
   background-repeat: no-repeat;
   background-position: bottom center; /* Ưu tiên giữ phần dưới của ảnh */
   position: relative;
-  padding: 100px 20px;
   color: white;
   font-family: sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding:20px
 }
 
 
@@ -23,7 +23,7 @@
 }
 
 .contact-section__title {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 600;
   margin-bottom: 40px;
   line-height: 1.4;

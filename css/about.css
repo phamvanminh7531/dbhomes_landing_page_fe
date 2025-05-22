@@ -66,9 +66,15 @@
   border: none;
 }
 
+
 .about-section .btn.outline {
   background-color: transparent;
   color: #4B3B39;
+  border: 1px solid #4B3B39;
+}
+.about-section .btn.outline:hover{
+  background-color: #943E32;
+  color: white;
   border: 1px solid #4B3B39;
 }
 

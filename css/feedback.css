@@ -160,3 +160,35 @@
    box-shadow: 13px 21px 22.5px rgba(0, 0, 0, 0.05);
 
 }
+@media (max-width: 1024px) {
+  .feedback-news-section swiper-container {
+    height: auto; /* Hoặc bất kỳ giá trị thấp hơn phù hợp */
+  }
+
+  .feedback-news-section swiper-slide {
+    height: auto; /* Đảm bảo đồng bộ chiều cao slide */
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-news-section swiper-container {
+    height: auto; /* Hoặc bất kỳ giá trị thấp hơn phù hợp */
+  }
+
+  .feedback-news-section swiper-slide {
+    height: auto; /* Đảm bảo đồng bộ chiều cao slide */
+  }
+}
+
+/* ... các style hiện tại ... */
+
+@media (max-width: 768px) {
+  .feedback-news-section__articles {
+    justify-content: center;
+  }
+
+  .feedback-news-section__article {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}

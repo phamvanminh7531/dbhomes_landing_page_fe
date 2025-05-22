@@ -1,0 +1,78 @@
+.vision-section {
+  background-color: #fdf3e7;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* tránh tràn ngang */
+}
+
+.vision__stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.vision__stat {
+  flex: 1 1 25%;
+  padding: 10px;
+}
+
+.vision__stat strong {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #702828;
+}
+
+.vision__stat p {
+  margin-top: 5px;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+
+.vision__content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 40px;
+}
+
+.vision__text {
+  flex: 1 1 55%;
+  color: #3a2c1c;
+}
+
+.vision__text h2 {
+  font-size: 24px;
+  color: #8c2e1d;
+  margin-bottom: 10px;
+}
+
+.vision__text h3 {
+  font-size: 20px;
+  color: #8c2e1d;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.vision__text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.vision__image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.vision__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
