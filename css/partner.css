@@ -148,10 +148,9 @@
 }
 
 .partners-section .project-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .partners-section .project-card {
@@ -172,16 +171,43 @@
 
 .partners-section .project-info {
   padding-top: 5px;
-  color: #3e1c0a;
+  color: #43230C;
 }
 
 .partners-section .project-info h3 {
 
   font-size: 24px;
-  color: #8a3b1b;
+  color: #96422F;
 }
 
 .partners-section .project-info p {
   margin: 0;
   font-size: 14px;
+}
+.partners-section .tab-menu {
+  display: flex;
+  gap: 40px; /* hoặc 32px nếu muốn nhỏ hơn */
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.partners-section .tab {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #43230C;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.partners-section .tab:hover {
+  border-bottom: 2px solid #3a2f25;
+}
+
+.partners-section .tab.active {
+  border-bottom: 2px solid #3a2f25;
+  font-weight: bold;
 }
