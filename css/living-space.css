@@ -1,0 +1,66 @@
+.living-space-section {
+  background-image: url('../images//bg.png');
+  background-repeat: repeat;
+  padding: 60px 20px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.living-space-section__title {
+  font-size: 64px;
+  font-weight: 600;
+  color: #43230C;
+  margin-bottom: 10px;
+}
+
+.living-space-section__description {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  color: #4F3C22;
+  font-size: 18px;
+}
+.living-space-section__grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.living-space-section__item {
+  flex: 1; /* Cho phép mỗi item mở rộng hết mức có thể */
+  min-width: 280px; /* Đảm bảo không bị quá nhỏ */
+}
+
+.living-space-section__image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  height: 400px;
+}
+
+.living-space-section__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.living-space-section__image-wrapper:hover img {
+  transform: scale(1.08);
+}
+
+.living-space-section__label {
+  margin-top: 12px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #43230C;
+  text-align: center;
+}
+.living-space-section__item {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

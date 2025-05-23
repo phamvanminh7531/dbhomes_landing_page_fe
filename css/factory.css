@@ -17,23 +17,23 @@
   align-items: flex-end;
   justify-content: flex-end; /* Đẩy nội dung về phía phải */
   padding: 40px;
-  padding-right: 120px;
+  padding-right: 55px;
 }
 
 .factory-content {
-  max-width: 500px;
+  max-width: 580px;
   color: #fff;
   text-align:left; /* Căn chữ về phải */
 }
 
 .factory-content h2 {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 600;
   margin-bottom: 16px;
 }
 
 .factory-content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 24px;
 }

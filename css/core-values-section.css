@@ -21,7 +21,7 @@
 }
 
 .core-values-title {
-  font-size: 42px;
+  font-size: 64px;
   font-weight: 600;
   color: #2d2d2d;
   margin-bottom: 48px;
@@ -44,20 +44,19 @@
 }
 
 .core-value-item img {
-  width: 40px;
-  height: 40px;
+
   margin-bottom: 16px;
 }
 
 .core-value-item h3 {
-  font-size: 18px;
+  font-size: 24px;
   color: #96422f;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .core-value-item p {
-  font-size: 15px;
+  font-size: 16px;
   color: #3a3a3a;
   line-height: 1.6;
 }

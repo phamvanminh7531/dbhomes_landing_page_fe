@@ -21,12 +21,13 @@
 
 .vision__stat {
   flex: 1 1 25%;
+  justify-items: flex-start;
  
 }
 
 .vision__stat strong {
   display: block;
-  font-size: 52px;
+  font-size: 64px;
   font-weight: 600;
   color: #96422F;
 }
@@ -34,7 +35,7 @@
 .vision__stat p {
   margin-top: 5px;
   color: #5c5c5c;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .vision__content {
@@ -52,7 +53,7 @@
 }
 
 .vision__text h2 {
-  font-size: 48px;
+  font-size: 64px;
   color: #96422F;
   margin-bottom: 10px;
     font-weight: 600;
