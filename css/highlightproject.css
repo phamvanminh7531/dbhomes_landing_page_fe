@@ -28,7 +28,7 @@
 
 .section-subtitle {
   color: #96422F;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
   width:70%;
   text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 64px;
   color: #43230C;
   width: 100%;
   text-align: center;
@@ -48,7 +48,7 @@
 .section-desc {
   color: #4F3C22;
   margin-bottom: 60px;
-  font-size: 13px;
+  font-size: 18px;
   width:60%;
   text-align: center;
    white-space: pre-line;
@@ -231,3 +231,43 @@ transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezi
   max-height: 200px;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-subtitle,
+  .section-desc {
+    font-size: 16px;
+  }
+
+  .slide-title {
+    font-size: 16px;
+  }
+
+  .slide-description {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle,
+  .section-desc {
+    font-size: 14px;
+  }
+  .section-desc{
+    width:100%;
+    white-space: normal;
+       
+  }
+  .slide-title {
+    font-size: 14px;
+  }
+
+  .slide-description {
+    font-size: 12px;
+  }
+}

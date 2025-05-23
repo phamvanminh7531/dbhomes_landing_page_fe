@@ -1,7 +1,8 @@
 .feedback-news-section {
  background-image: url('../images//bg.png');
   background-repeat: repeat;
-  padding: 30px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +17,7 @@
 
 .feedback-news-section__heading {
   text-align: center;
-  font-size: 32px;
+  font-size: 64px;
   color: #4a2c15;
   margin-bottom: 40px;
   font-weight: 600;
@@ -63,8 +64,8 @@
 }
 
 .feedback-news-section__news-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 48px;
+ 
   color: #4a2c15;
   font-weight: 600;
 }
@@ -116,13 +117,13 @@
 
 .feedback-news-section__article-title {
   padding: 0 12px 12px;
-  font-size: 16px;
+  font-size: 18px;
   color: #43230C;
   font-weight: 300;
 }
 
 .feedback-news-section__view-all {
-  margin-top: 20px;
+
   display: block;
   background: none;
   border: 1px solid #c19b76;
@@ -195,5 +196,64 @@
   .feedback-news-section__article {
     width: 100% !important;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .feedback-news-section__heading {
+    font-size: 40px; /* Giảm kích thước tiêu đề */
+  }
+
+  .feedback-news-section__news-title {
+    font-size: 36px; /* Giảm kích thước tiêu đề tin tức */
+  }
+
+  .feedback-news-section__quote {
+    font-size: 14px; /* Giảm kích thước nội dung phản hồi */
+  }
+
+  .feedback-news-section__user {
+    font-size: 12px;
+  }
+
+  .feedback-news-section__article-title {
+    font-size: 16px; /* Giảm kích thước tiêu đề bài viết */
+  }
+
+  .feedback-news-section__date {
+    font-size: 12px;
+  }
+
+  .feedback-news-section__badge {
+    font-size: 10px; /* Giảm kích thước thẻ */
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-news-section__heading {
+    font-size: 30px; /* Nhỏ hơn nữa cho điện thoại */
+  }
+
+  .feedback-news-section__news-title {
+    font-size: 28px;
+  }
+
+  .feedback-news-section__quote {
+    font-size: 12px;
+  }
+
+  .feedback-news-section__user {
+    font-size: 10px;
+  }
+
+  .feedback-news-section__article-title {
+    font-size: 14px;
+  }
+
+  .feedback-news-section__date {
+    font-size: 10px;
+  }
+
+  .feedback-news-section__badge {
+    font-size: 9px;
   }
 }

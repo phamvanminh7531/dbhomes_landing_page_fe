@@ -9,7 +9,7 @@
 }
 
 .ecosystem-title {
-  font-size: 50px;
+  font-size: 64px;
   color: #FFF7EC;
   margin-bottom: 10px;
   font-weight: 300;
@@ -34,8 +34,8 @@
 
 /* Hình tròn có margin âm để chồng lên nhau */
 .circle {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border: 2px solid #FFF7EC;
   border-radius: 50%;
   display: flex;
@@ -43,7 +43,7 @@
   justify-content: center;
   color: #FFF7EC;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 30px;
   background: transparent;
   margin-left: -25px; /* chồng lấn vào hình trước */
 }
@@ -88,5 +88,32 @@
   .circle:nth-child(4) {
     transform: translate(15px, 15px);
     z-index: 1;
+  }
+}
+@media (max-width: 768px) {
+  .ecosystem-title {
+    font-size: 40px; /* Giảm kích thước tiêu đề */
+  }
+
+  .ecosystem-desc {
+    font-size: 12px; /* Giảm kích thước mô tả */
+  }
+
+  .circle {
+    font-size: 24px; /* Giảm kích thước chữ bên trong hình */
+  }
+}
+
+@media (max-width: 480px) {
+  .ecosystem-title {
+    font-size: 32px; /* Nhỏ hơn nữa cho điện thoại */
+  }
+
+  .ecosystem-desc {
+    font-size: 10px;
+  }
+
+  .circle {
+    font-size: 20px;
   }
 }

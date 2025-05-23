@@ -17,13 +17,13 @@
 
 
 .contact-section__container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 .contact-section__title {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 600;
   margin-bottom: 40px;
   line-height: 1.4;
@@ -41,7 +41,7 @@
   border: none;
   border-bottom: 1px solid #fff;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 28px 0;
   outline: none;
 }

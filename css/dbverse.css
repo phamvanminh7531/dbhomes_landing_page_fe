@@ -29,7 +29,7 @@
 }
 
 .dbverse-block .text-content h3 {
-  font-size: 24px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 1.4;
   color: #5b2c0f;
@@ -42,7 +42,7 @@
 }
 
 .dbverse-block .text-content p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   color: #333;
   margin-bottom: 12px;
@@ -89,4 +89,62 @@
   transform: translateY(-50%);
   z-index: 1;
   pointer-events: none;
+}
+@media (max-width: 768px) {
+  .dbverse-section {
+    padding-bottom: 100px; /* Giảm khoảng cách dưới */
+  }
+
+  .dbverse-section .container {
+    gap: 100px; /* Giảm khoảng cách giữa các khối */
+  }
+
+  .dbverse-block {
+    flex-direction: column; /* Chuyển sang layout dọc */
+    align-items: left; /* Căn giữa */
+  }
+
+  .dbverse-block .text-content {
+    max-width: 100%; /* Cho phép nội dung text mở rộng hơn */
+    text-align: left; /* Căn giữa nội dung */
+  }
+
+  .dbverse-block .text-content h3 {
+    font-size: 28px; /* Giảm kích thước tiêu đề */
+  }
+
+  .dbverse-block .text-content p {
+    font-size: 16px; /* Giảm kích thước chữ */
+  }
+
+  .dbverse-block .image-content {
+    flex: none; /* Ngăn hình ảnh chiếm quá nhiều diện tích */
+    width: 80%; /* Giảm kích thước ảnh */
+  }
+
+  .app-buttons {
+    justify-content: left; /* Căn giữa nút */
+  }
+
+  .app-buttons img {
+    height: 35px; /* Giảm kích thước nút */
+  }
+}
+
+@media (max-width: 480px) {
+  .dbverse-block .text-content h3 {
+    font-size: 24px; /* Giảm tiêu đề hơn nữa */
+  }
+
+  .dbverse-block .text-content p {
+    font-size: 14px; /* Nhỏ hơn cho điện thoại */
+  }
+
+  .dbverse-block .image-content {
+    width: 100%; /* Full width cho màn hình nhỏ */
+  }
+
+  .app-buttons img {
+    height: 30px;
+  }
 }
