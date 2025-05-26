@@ -176,3 +176,74 @@ color: rgba(67, 35, 12, 0.6);
 .project-detail__share a:hover i {
   opacity: 1;
 }
+/* Tablet - nhỏ hơn 1024px */
+@media (max-width: 1024px) {
+  .project-detail__container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .project-detail__main {
+    width: 100%;
+  }
+
+  .project-detail__sidebar {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .project-detail__item-thumb {
+    width: 200px;
+    height: auto;
+  }
+
+  .project-detail__item-text {
+    max-width: 100%;
+  }
+}
+
+/* Mobile - nhỏ hơn 600px */
+@media (max-width: 600px) {
+  .project-detail {
+    padding: 20px 0;
+  }
+
+  .project-detail__title {
+    font-size: 28px;
+  }
+
+  .project-detail__heading {
+    font-size: 24px;
+  }
+
+  .project-detail__subtitle,
+  .project-detail__description,
+  .project-detail__caption,
+  .breadcrumb-home,
+  .breadcrumb-section,
+  .breadcrumb-current {
+    font-size: 14px;
+  }
+
+  .project-detail__container {
+    gap: 24px;
+  }
+
+  .project-detail__image {
+    gap: 24px;
+  }
+
+  .project-detail__item {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+
+  .project-detail__item-thumb {
+    width: 160px;
+    height: 100px;
+    margin-bottom: 8px;
+  }
+
+  
+}

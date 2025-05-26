@@ -44,9 +44,6 @@
   white-space: pre-line;
 }
 
-/* Responsive */
-
-/* Tablet & nhỏ hơn */
 @media (max-width: 1024px) {
 .hero-section-v3  {
     padding: 40px 40px;

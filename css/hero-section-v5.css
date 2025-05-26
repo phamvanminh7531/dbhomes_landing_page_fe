@@ -76,9 +76,7 @@
    {
     padding: 30px 20px;
     height: 70vh;
-    align-items: center; /* căn giữa dọc cho mobile */
-    justify-content: center; /* căn giữa ngang */
-    text-align: center;
+
   }
 
   .hero-section-v5
@@ -93,10 +91,6 @@
     margin-top: 6px;
   }
 
-  .hero-section-v5
-   .breadcrumb {
-    display: none; /* ẩn breadcrumb nếu cần */
-  }
 }
 
 /* Siêu nhỏ (như điện thoại nhỏ) */

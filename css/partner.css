@@ -125,7 +125,7 @@
 }
 
 .partners-section .featured-projects-header h2 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 600;
   color: #3e1c0a;
 }
@@ -152,7 +152,17 @@
   grid-template-columns: repeat(3, 1fr); /* 3 cột */
   gap: 20px;
 }
+@media (max-width: 1024px) {
+  .partners-section .project-list {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 cột */
+  }
+}
 
+@media (max-width: 600px) {
+  .partners-section .project-list {
+    grid-template-columns: 1fr; /* Mobile: 1 cột */
+  }
+}
 .partners-section .project-card {
 
   border-radius: 10px;
@@ -202,7 +212,26 @@
   cursor: pointer;
   transition: border-color 0.3s ease;
 }
+@media (max-width: 768px) {
+  .partners-section .tab-menu {
+    gap: 24px;
+  }
 
+  .partners-section .tab {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-section .tab-menu {
+    gap: 16px;
+    justify-content: center; /* Canh giữa nếu ít tab */
+  }
+
+  .partners-section .tab {
+    font-size: 14px;
+  }
+}
 .partners-section .tab:hover {
   border-bottom: 2px solid #3a2f25;
 }
