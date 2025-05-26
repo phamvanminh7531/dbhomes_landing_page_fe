@@ -65,3 +65,80 @@
   color: inherit;
   cursor: pointer;
 }
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .living-space-section {
+    padding: 50px 16px;
+  }
+
+  .living-space-section__title {
+    font-size: 48px;
+  }
+
+  .living-space-section__description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .living-space-section__grid {
+    gap: 30px;
+  }
+
+  .living-space-section__label {
+    font-size: 24px;
+  }
+
+  .living-space-section__image-wrapper {
+    height: 300px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .living-space-section {
+    padding: 40px 12px;
+  }
+
+  .living-space-section__title {
+    font-size: 36px;
+  }
+
+  .living-space-section__description {
+    font-size: 15px;
+  }
+
+  .living-space-section__grid {
+    gap: 20px;
+  }
+
+  .living-space-section__label {
+    font-size: 20px;
+  }
+
+  .living-space-section__image-wrapper {
+    height: 220px;
+  }
+}
+
+/* Extra Small Devices (≤480px) */
+@media (max-width: 480px) {
+  .living-space-section__title {
+    font-size: 28px;
+  }
+
+  .living-space-section__description {
+    font-size: 14px;
+  }
+
+  .living-space-section__label {
+    font-size: 18px;
+  }
+
+  .living-space-section__image-wrapper {
+    height: 180px;
+  }
+
+  .living-space-section__grid {
+    gap: 16px;
+  }
+}

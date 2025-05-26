@@ -99,7 +99,8 @@
 
 @media (max-width: 480px) {
   .faq-title {
-    font-size: 28px; /* Nhỏ hơn nữa cho điện thoại */
+    font-size: 28px;
+    text-align: center; /* Nhỏ hơn nữa cho điện thoại */
   }
 
   .faq-question {

@@ -66,9 +66,7 @@
 .hero-section-v3  {
     padding: 30px 20px;
     height: 70vh;
-    align-items: center; /* căn giữa dọc cho mobile */
-    justify-content: center; /* căn giữa ngang */
-    text-align: center;
+ 
   }
 
 .hero-section-v3  .hero-content h1 {
@@ -81,9 +79,7 @@
     margin-top: 6px;
   }
 
-.hero-section-v3  .breadcrumb {
-    display: none; /* ẩn breadcrumb nếu cần */
-  }
+
 }
 
 /* Siêu nhỏ (như điện thoại nhỏ) */
@@ -97,6 +93,6 @@
     font-size: 12px;
   }
 .hero-section-v3 .hero-subtitle {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
