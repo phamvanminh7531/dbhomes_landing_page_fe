@@ -54,3 +54,22 @@
  background-color: white;
   color: #96422F;
 }
+@media (max-width: 768px) {
+  .factory-content h2 {
+    font-size: 36px;
+  }
+
+  .factory-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .factory-content h2 {
+    font-size: 30px;
+  }
+
+  .factory-content p {
+    font-size: 13px;
+  }
+}

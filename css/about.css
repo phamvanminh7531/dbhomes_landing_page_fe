@@ -103,7 +103,7 @@
     text-align: left;
     height: auto;
     background-size: cover;
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
   .desc:nth-of-type(2) {
     display: none !important;

@@ -59,3 +59,48 @@ background-color: transparent;
   margin: 0;
   color: #43230C;
 }
+@media (max-width: 1024px) {
+  .product-section__grid {
+    grid-template-columns: repeat(3, 1fr); /* Giảm còn 3 cột */
+  }
+
+  .product-section__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-section__grid {
+    grid-template-columns: repeat(2, 1fr); /* Còn 2 cột */
+  }
+
+  .product-section__title {
+    font-size: 28px;
+  }
+
+  .product-section__breadcrumb {
+    font-size: 14px;
+  }
+
+  .product-section__item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-section__grid {
+    grid-template-columns: 1fr; /* Mỗi hàng 1 item */
+  }
+
+  .product-section__title {
+    font-size: 30px;
+  }
+
+  .product-section__breadcrumb {
+    font-size: 13px;
+  }
+
+  .product-section__item p {
+    font-size: 13px;
+  }
+}

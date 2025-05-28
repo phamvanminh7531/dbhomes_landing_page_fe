@@ -26,6 +26,7 @@
   color: #2d2d2d;
   margin-bottom: 48px;
   line-height: 1.4;
+  white-space: pre-line;
 }
 
 .core-values-title .highlight {
@@ -59,4 +60,71 @@
   font-size: 16px;
   color: #3a3a3a;
   line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .core-values-section {
+    padding: 40px 16px;
+  }
+
+  .core-values-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .core-values-subtitle {
+    font-size: 14px;
+  }
+
+  .core-values-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .core-value-item h3 {
+    font-size: 20px;
+  }
+
+  .core-value-item p {
+    font-size: 14px;
+  }
+
+  .core-value-item img {
+    max-width: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .core-values-section {
+    padding: 32px 12px;
+  }
+
+  .core-values-title {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    white-space: normal;
+  }
+
+  .core-values-subtitle {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .core-values-grid {
+    gap: 20px;
+  }
+
+  .core-value-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .core-value-item p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .core-value-item img {
+    max-width: 60px;
+    margin-bottom: 12px;
+  }
 }

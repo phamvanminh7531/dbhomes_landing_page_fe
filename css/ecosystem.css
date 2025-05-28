@@ -52,68 +52,83 @@
   margin-left: 0; /* hình đầu tiên không bị đẩy vào trái */
 }
 @media (max-width: 768px) {
+  .ecosystem-section{
+    background-color: #8C795F;
+  }
   .circle-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    gap: 0;
-    position: relative;
-    width: 320px; /* 160*2 */
+    justify-content: center;
+    align-items: center;
+    width: 320px; /* 160 * 2 */
     margin: 0 auto;
   }
 
   .circle {
     width: 160px;
     height: 160px;
-    margin: 0;
-    /* giữ nguyên background, font, border-radius nếu bạn đã có */
-    position: relative;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 2px solid #FFF7EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF7EC;
+    font-weight: 300;
+    background: transparent;
   }
 
-  .circle:nth-child(1) {
-    transform: translate(-15px, -15px);
+
+   .circle:nth-child(1) {
+    margin: 0 -10px -12px 0; /* DBPLUS - trên trái */
     z-index: 4;
   }
 
   .circle:nth-child(2) {
-    transform: translate(15px, -15px);
+    margin: 0 0 -10px -20px; /* DBHOMES - trên phải */
     z-index: 3;
   }
 
   .circle:nth-child(3) {
-    transform: translate(-15px, 15px);
+    margin: -10px -10px 0 0; /* MODULE - dưới trái */
     z-index: 2;
   }
 
   .circle:nth-child(4) {
-    transform: translate(15px, 15px);
+    margin: -10px 0 0 -20px; /* ESMART - dưới phải */
     z-index: 1;
   }
-}
-@media (max-width: 768px) {
+
   .ecosystem-title {
-    font-size: 40px; /* Giảm kích thước tiêu đề */
+    font-size: 40px;
   }
 
   .ecosystem-desc {
-    font-size: 12px; /* Giảm kích thước mô tả */
-  }
-
-  .circle {
-    font-size: 24px; /* Giảm kích thước chữ bên trong hình */
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
+   .ecosystem-section{
+    background-color: #8C795F;
+  }
+  .circle-container {
+    width: 280px;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+    font-size: 20px;
+  }
+
+
   .ecosystem-title {
-    font-size: 32px; /* Nhỏ hơn nữa cho điện thoại */
+    font-size: 32px;
   }
 
   .ecosystem-desc {
     font-size: 10px;
   }
-
-  .circle {
-    font-size: 20px;
-  }
 }
+
