@@ -88,6 +88,9 @@
     padding: 20px 15px;
     height: 60vh;
   }
+.hero-section-v4 .hero-subtitle{
+  white-space: normal;
+}
 
 .hero-section-v4  .hero-content h1 {
     font-size: 12px;
