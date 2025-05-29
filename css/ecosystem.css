@@ -20,6 +20,7 @@
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 60px;
+  white-space: pre-line;
 }
 
 .circle-container {
@@ -105,6 +106,7 @@
 
   .ecosystem-desc {
     font-size: 12px;
+     white-space: normal;
   }
 }
 
@@ -124,11 +126,12 @@
 
 
   .ecosystem-title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .ecosystem-desc {
     font-size: 10px;
+    white-space: normal;
   }
 }
 

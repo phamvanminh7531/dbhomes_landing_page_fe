@@ -137,7 +137,7 @@ padding: 0 20px 80px;
 }
 @media (max-width: 768px) {
   .services-section {
-    padding: 40px 10px; /* Giảm padding để phù hợp với màn hình nhỏ */
+    padding: 40px 0px; /* Giảm padding để phù hợp với màn hình nhỏ */
   }
 
   .services-section .title {

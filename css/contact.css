@@ -71,7 +71,7 @@
 }
 @media (max-width: 768px) {
   .contact-section {
-    padding: 60px 16px;
+    padding: 60px 0px;
     height: auto; /* Tránh height cố định 150vh trên điện thoại */
   }
 

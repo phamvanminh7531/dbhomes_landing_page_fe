@@ -141,7 +141,7 @@
 /* ==== Responsive Footer Styles ==== */
 @media (max-width: 768px) {
   .footer-db {
-    padding: 24px 16px;
+    padding: 24px 0px;
   }
 
   .footer-db-container {
