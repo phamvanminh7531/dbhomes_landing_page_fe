@@ -70,3 +70,4 @@ initSwiper('.mySwiper2', {
   prevArrowSelector: '.feedback-news-section .arrow.prev',
   nextArrowSelector: '.feedback-news-section .arrow.next'
 });
+
