@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .feedback-news-section__container {
@@ -92,10 +93,34 @@
   flex-shrink: 0; /* Ngăn không cho card co lại khi không đủ không gian */
   margin-bottom: 20px; /* Thêm khoảng cách dưới nếu có nhiều hàng */
 }
+.news-image-container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.news-image-container img {
+ width: 100%;
+  display: block;
+}
+
+.news-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: rgba(255, 255, 255, 0.25); /* Màu nền mờ mờ */
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4.75px;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(4px); /* Tạo hiệu ứng nền mờ */
+  width: 100px;
+    text-align: center;
+}
 
 .feedback-news-section__article img {
-  width: 100%;
-  display: block;
+ 
 }
 
 .feedback-news-section__badge {
@@ -152,7 +177,8 @@
 .feedback-news-section swiper-container {
   width: 100%;
   height: auto;
-  height:350px
+  height:350px;
+ 
 }
 .feedback-news-section swiper-slide img {
   width: 100%;
@@ -170,13 +196,19 @@
   background: transparent;
     height:300px;
    box-shadow: 13px 21px 22.5px rgba(0, 0, 0, 0.05);
-
+}
+.mySwiper2::part(container) {
+  padding: 5px;
 }
 @media (max-width: 1024px) {
   .feedback-news-section swiper-container {
     height: auto; /* Hoặc bất kỳ giá trị thấp hơn phù hợp */
+    border-radius: 12px;
   }
-
+ .mySwiper2::part(container)  {
+  border-radius: 12px;
+  overflow: hidden;
+}
   .feedback-news-section swiper-slide {
     height: auto; /* Đảm bảo đồng bộ chiều cao slide */
   }
@@ -185,6 +217,7 @@
 @media (max-width: 480px) {
   .feedback-news-section swiper-container {
     height: auto; /* Hoặc bất kỳ giá trị thấp hơn phù hợp */
+     border-radius: 12px;
   }
 
   .feedback-news-section swiper-slide {
@@ -198,7 +231,10 @@
   .feedback-news-section__articles {
     justify-content: center;
   }
-
+ .feedback-news-section swiper-container {
+   
+     border-radius: 12px;
+  }
   .feedback-news-section__article {
     width: 100% !important;
     margin-bottom: 20px;
@@ -238,6 +274,10 @@
        justify-content: flex-start;
     margin-top: 16px;
   }
+   .mySwiper2::part(container)  {
+  border-radius: 12px;
+  overflow: hidden;
+}
   .feedback-news-section__badge {
     font-size: 10px; /* Giảm kích thước thẻ */
   }
@@ -277,7 +317,72 @@
     justify-content: flex-start;
     margin-top: 16px;
   }
+ .mySwiper2::part(container)  {
+  border-radius: 12px;
+  overflow: hidden;
+}
   .feedback-news-section__badge {
     font-size: 9px;
   }
+  .feedback-news-section .swiper {
+    border-radius: 12px;
+  }
+}
+.testimonial-card {
+  background: #FFF7EC;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card .quote {
+  font-size: 100px; /* icon to */
+  color: rgba(67, 35, 12, 0.15); /* opacity 15% */
+  height:60px !important;
+  /* Xoá khoảng trống mặc định */
+  margin: -8px;
+  padding: 0;
+
+  /* Kiểm soát chiều cao dòng để sát chữ */
+  line-height: 1;
+
+  /* Nếu cần căn top-left */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  /* Nếu vẫn có khoảng trắng thừa, có thể dùng */
+  height: auto;
+  overflow: hidden;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #43230C;
+  margin: 0 0 20px;
+}
+
+.testimonial-card .author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-card .author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.author strong {
+  font-size: 12px;
+  color: #43230C;
+}
+.project-name {
+  font-size: 12px;
+  color: #43230C;
 }

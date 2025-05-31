@@ -20,14 +20,24 @@
   gap: 30px;
 }
 
-.footer-db-brand,
-.footer-db-links,
-.footer-db-info,
-.footer-db-contact {
-  flex: 1;
-  min-width: 220px;
-  
+.footer-db-brand {
+  width: 30%;
 }
+
+.footer-db-links {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-db-info {
+  width: 25%;
+}
+
+.footer-db-contact {
+  width: 20%;
+}
+
 .footer-db-brand, .footer-db-info{
   display :flex;
   flex-direction: column;
@@ -70,13 +80,17 @@
   padding: 0;
 }
 
-.footer-db-links li {
-  margin: 8px 0;
-  cursor: pointer;
+.footer-db-links ul li {
+  margin: 24px 0; /* margin mặc định cho tất cả các li */
 }
 
+.footer-db-links ul li:first-child {
+  margin-top: 0; /* đặt margin-top bằng 0 cho phần tử li đầu tiên */
+}
+
+
 .footer-db-offices > div {
-  margin-bottom: 12px;
+  margin-bottom: 50px;
 }
 
 .footer-db-socials {
@@ -86,7 +100,10 @@
 .footer-db-socials p {
   margin-bottom: 10px;
 }
-
+.footer-db-icons {
+  display: flex;
+  gap:30px;
+}
 .footer-db-icons img {
   width: 20px;
   height: 20px;
