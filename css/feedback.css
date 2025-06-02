@@ -95,7 +95,7 @@
 }
 .news-image-container {
   position: relative;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -135,13 +135,13 @@
 }
 
 .feedback-news-section__date {
-  padding: 12px;
+  padding: 12px 12px 12px 0;
   font-size: 13px;
   color: #96422F;
 }
 
 .feedback-news-section__article-title {
-  padding: 0 12px 12px;
+  padding: 0 12px 12px 0;
   font-size: 18px;
   color: #43230C;
   font-weight: 300;
@@ -360,7 +360,7 @@
   overflow: hidden;
 }
 
-.testimonial-card p {
+.testimonial-card .desc  {
   font-size: 14px;
   color: #43230C;
   margin: 0 0 20px;

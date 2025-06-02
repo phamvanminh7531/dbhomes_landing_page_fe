@@ -25,10 +25,14 @@
   font-weight: 600;
   color: #2d2d2d;
   margin-bottom: 48px;
+  margin-top: 36px;
   line-height: 1.4;
-  white-space: pre-line;
+ 
 }
-
+.core-values-title h2 {
+  all: unset;
+  display: block;
+}
 .core-values-title .highlight {
   color: #96422f;
 }

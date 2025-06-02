@@ -142,9 +142,13 @@
   color: #43230C;
 }
 
-.partners-section .project-info h3 {
+.partners-section .project-info__title {
   font-size: 21px;
   color: #96422F;
+}
+.partners-section .project-info__description {
+  margin: 0;
+  font-size: 14px;
 }
 /* Áp dụng chỉ trong phần .project-card */
 .project-card .image-wrapper {
@@ -179,10 +183,7 @@
   backdrop-filter: blur(4px);
 }
 
-.partners-section .project-info p {
-  margin: 0;
-  font-size: 14px;
-}
+
 .partners-section .tab-menu {
   display: flex;
   gap: 40px; /* hoặc 32px nếu muốn nhỏ hơn */

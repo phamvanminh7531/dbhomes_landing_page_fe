@@ -120,7 +120,7 @@ padding: 0 20px 80px;
   align-items: center;
 }
 
-.services-section .service-card h3 {
+.services-section .service-card .title {
   font-size: 18px;
   margin-bottom: 10px;
   color: #fff;
@@ -128,7 +128,7 @@ padding: 0 20px 80px;
   text-align: center;
 }
 
-.services-section .service-card p {
+.services-section .service-card .desc {
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
