@@ -105,7 +105,7 @@
     background-size: cover;
     padding: 40px 0px;
   }
-  .desc:nth-of-type(2) {
+  .about-section .desc:nth-of-type(2) {
     display: none !important;
   }
   .about-section .content {
@@ -131,7 +131,7 @@
   .about-section .stat-box .label {
     font-size: 13px;
   }
-  .desc:nth-of-type(2) {
+  .about-section .desc:nth-of-type(2) {
     display: none !important;
   }
 

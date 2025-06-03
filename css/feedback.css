@@ -116,7 +116,7 @@
   font-weight: 500;
   backdrop-filter: blur(4px); /* Tạo hiệu ứng nền mờ */
   width: 100px;
-    text-align: center;
+  text-align: center;
 }
 
 .feedback-news-section__article img {
