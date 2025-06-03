@@ -105,6 +105,15 @@
     background-size: cover;
     padding: 40px 0px;
   }
+
+.about-section .btn {
+
+  font-size: 12px;
+ 
+}
+.about-section .buttons {
+  width: 71%;
+}
   .about-section .desc:nth-of-type(2) {
     display: none !important;
   }
@@ -122,6 +131,7 @@
   }
 .about-section .stats {
     gap: 20px; /* giảm khoảng cách */
+     width: 80%
   }
 
   .about-section .stat-box .number {

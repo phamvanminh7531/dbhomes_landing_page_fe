@@ -71,8 +71,11 @@ color: rgba(67, 35, 12, 0.6);
   margin: 0;
   color:#43230C;
 }
+
+
 .project-detail__title p {
   font-weight: bold;
+   white-space: pre-line;
 }
 .project-detail__subtitle {
   font-size: 16px;
@@ -176,7 +179,9 @@ color: rgba(67, 35, 12, 0.6);
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
-
+.project-detail__description p{
+    text-align: justify;
+  }
 .project-detail__share a:hover i {
   opacity: 1;
 }
@@ -211,7 +216,9 @@ color: rgba(67, 35, 12, 0.6);
   .project-detail {
     padding: 20px 0;
   }
-
+  .project-detail__title p {
+    white-space: normal; 
+  }
   .project-detail__title {
     font-size: 28px;
   }
@@ -219,7 +226,6 @@ color: rgba(67, 35, 12, 0.6);
   .project-detail__heading {
     font-size: 24px;
   }
-
   .project-detail__subtitle,
   .project-detail__description,
   .project-detail__caption,
@@ -228,26 +234,21 @@ color: rgba(67, 35, 12, 0.6);
   .breadcrumb-current {
     font-size: 14px;
   }
-
+  
   .project-detail__container {
     gap: 24px;
   }
-
   .project-detail__image {
     gap: 24px;
   }
-
   .project-detail__item {
     flex-direction: row;
     align-items: center;
     display: flex;
   }
-
   .project-detail__item-thumb {
     width: 160px;
     height: 100px;
     margin-bottom: 8px;
   }
-
-  
 }

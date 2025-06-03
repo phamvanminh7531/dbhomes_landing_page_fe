@@ -168,11 +168,20 @@
     padding: 30px 16px;
     text-align: left; /* ✅ canh lề trái */
   }
-
+ .footer-db-links {
+    order: 4; /* chuyển xuống dưới cùng */
+  }
+  .footer-db-info{
+    order: 3;
+    flex-direction: column-reverse;
+  }
+  .footer-db-contact {
+    order: 2; /* chuyển lên vị trí cột 2 */
+  }
   .footer-db-top {
     flex-direction: column;
     align-items: flex-start; /* ✅ canh trái các khối */
-    gap: 40px;
+    gap: 30px;
   }
 
   .footer-db-brand,
@@ -203,7 +212,7 @@
   }
 
   .footer-db-info {
-    gap: 12px;
+    gap: 30px;
   }
 
   .footer-db-contact p {
