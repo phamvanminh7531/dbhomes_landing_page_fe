@@ -47,15 +47,20 @@
 }
 
 .faq-answer {
-  padding: 0 20px 15px 20px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
   font-size: 16px;
   color: #43230C;
-  display: none;
   background-color: transparent;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
+/* Khi active thì mở rộng chiều cao và padding */
 .faq-item.active .faq-answer {
-  display: block;
+  max-height: 500px; /* chiều cao đủ lớn để chứa nội dung */
+  padding: 15px 20px 15px 20px;
+  display: block; /* giữ display block */
 }
 
 .faq-toggle {
