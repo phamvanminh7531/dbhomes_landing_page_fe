@@ -181,6 +181,7 @@ color: rgba(67, 35, 12, 0.6);
 }
 .project-detail__description p{
     text-align: justify;
+    color: #43230c;
   }
 .project-detail__share a:hover i {
   opacity: 1;
@@ -200,7 +201,7 @@ color: rgba(67, 35, 12, 0.6);
 
 .project-detail__table th,
 .project-detail__table td {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #893f2e;
   text-align: left;
   padding: 12px 16px;
   vertical-align: top;
@@ -208,21 +209,21 @@ color: rgba(67, 35, 12, 0.6);
 
 .project-detail__table th {
   font-weight: 600;
-  color: #222;
-  background-color: #fafafa;
+  color: #43230c;
+  background-color:transparent;
 }
 
 .project-detail__table tbody {
 
-  background-color: white;
+  background-color: transparent;
 }
 .project-detail__table td {
-  color: #555;
+  color: #43230c;
   opacity: 80%;
 }
 .project-detail__table td:first-child {
   font-weight: 600;
-  color: #222; /* tuỳ chọn nếu muốn làm đậm màu thêm */
+  color: #43230c; /* tuỳ chọn nếu muốn làm đậm màu thêm */
 }
 .project-detail__table tr:last-child td {
   border-bottom: none;
@@ -233,9 +234,11 @@ color: rgba(67, 35, 12, 0.6);
   flex-wrap: wrap;
   flex-direction: row;
 }
-
+.project-detail__caption p{
+  text-align: justify;
+}
 .project-detail__image-row img {
-  width: 48%;
+  width: 48.9%;
   height: auto;
   display: block;
 }
@@ -305,4 +308,10 @@ color: rgba(67, 35, 12, 0.6);
     height: 100px;
     margin-bottom: 8px;
   }
+  
+.project-detail__image-row img {
+  width: 47.5%;
+  height: auto;
+  display: block;
+}
 }
