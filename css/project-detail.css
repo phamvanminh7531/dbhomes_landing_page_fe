@@ -306,4 +306,9 @@ color: rgba(67, 35, 12, 0.6);
   height: auto;
   display: block;
 }
+
+.project-detail__image-group {
+
+  margin-bottom: 20px;
+}
 }
