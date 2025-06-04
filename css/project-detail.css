@@ -185,6 +185,60 @@ color: rgba(67, 35, 12, 0.6);
 .project-detail__share a:hover i {
   opacity: 1;
 }
+.project-detail__table-wrapper {
+  margin: 32px 0;
+  overflow-x: auto;
+}
+
+.project-detail__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: 15px;
+  color: #333;
+}
+
+.project-detail__table th,
+.project-detail__table td {
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  padding: 12px 16px;
+  vertical-align: top;
+}
+
+.project-detail__table th {
+  font-weight: 600;
+  color: #222;
+  background-color: #fafafa;
+}
+
+.project-detail__table tbody {
+
+  background-color: white;
+}
+.project-detail__table td {
+  color: #555;
+  opacity: 80%;
+}
+.project-detail__table td:first-child {
+  font-weight: 600;
+  color: #222; /* tuỳ chọn nếu muốn làm đậm màu thêm */
+}
+.project-detail__table tr:last-child td {
+  border-bottom: none;
+}
+.project-detail__image-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-detail__image-row img {
+  width: 48%;
+  height: auto;
+  display: block;
+}
 /* Tablet - nhỏ hơn 1024px */
 @media (max-width: 1024px) {
   .project-detail__container {
