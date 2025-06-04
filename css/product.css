@@ -59,6 +59,31 @@ background-color: transparent;
   margin: 0;
   color: #43230C;
 }
+.square-image {
+  width: 150px;              /* Chiều rộng cố định */
+  height: 150px;             /* Chiều cao bằng chiều rộng để tạo hình vuông */
+  border: 1px solid #8C795F;   /* Viền bên ngoài */
+  overflow: hidden;          /* Ẩn phần ảnh vượt ra ngoài khung */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.square-image img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Hiệu ứng mượt khi phóng to */
+}
+
+.square-image img:hover {
+  transform: scale(1.1); /* Phóng to ảnh lên 110% khi hover */
+ 
+}
+.square-image:hover{
+ background-color: #C8B497;
+}
 @media (max-width: 1024px) {
   .product-section__grid {
     grid-template-columns: repeat(3, 1fr); /* Giảm còn 3 cột */
