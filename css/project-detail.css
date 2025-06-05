@@ -140,9 +140,20 @@ color: rgba(67, 35, 12, 0.6);
 .project-detail__item-thumb {
   width: 233px;
   height: 131px;
-  background-color: #c2aa8e; /* giống tone hình */
+  background-color: #c2aa8e;
   margin-right: 8px;
   flex-shrink: 0;
+  overflow: hidden; /* để ảnh không tràn ra ngoài */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-detail__item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ảnh lấp đầy vùng mà không méo */
+  display: block;
 }
 
 .project-detail__item-text {
