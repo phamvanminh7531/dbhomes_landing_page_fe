@@ -239,12 +239,10 @@ color: rgba(67, 35, 12, 0.6);
 }
 
 
-.project-detail__list {
-  flex: 1; /* hoặc width, padding tuỳ mục đích */
-}
 
-.project-detail__list ul {
-padding-left: 20px;
+
+.project-detail__description ul {
+  padding-left: 20px;
   margin: 0;
   list-style-type: disc;
   color:#43230C;

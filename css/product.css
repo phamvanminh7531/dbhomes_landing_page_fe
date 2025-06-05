@@ -117,10 +117,7 @@ background-color: transparent;
 @media (max-width: 480px) {
   .product-section__grid {
     grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Mỗi hàng 1 item */
+  /* Mỗi hàng 1 item */
   }
 
   .product-section__title {
