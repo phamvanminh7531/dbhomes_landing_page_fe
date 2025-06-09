@@ -42,7 +42,10 @@ padding-top: 60px;
 .nav-links a:hover {
   opacity: 0.85;
 }
-
+.main-content-container {
+  position: relative;
+  z-index: 1;
+}
 .navbar .main-content-container{
   display: flex;
   justify-content: space-between;
