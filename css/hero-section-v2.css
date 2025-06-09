@@ -26,7 +26,11 @@
   position: relative; 
   z-index: 1;
 }
-
+.hero-section-v2 .hero-content .home-title{
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 .hero-section-v2 .hero-content h1 {
   font-size: 16px;
   font-weight: 400;
@@ -92,7 +96,11 @@
     padding: 40px 40px;
 
   }
-
+.hero-section-v2 .hero-content .home-title{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
   .hero-section-v2 .hero-content h1 {
     font-size: 16px;
   }
