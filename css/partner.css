@@ -24,6 +24,8 @@
   color:#43230C;
 }
 
+
+
 .partners-section .title span {
   color: #96422F;
 }
@@ -76,168 +78,18 @@ padding: 10px 20px 40px 20px;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
-.partners-section .featured-projects {
-  margin-top: 40px;
-
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.partners-section .featured-projects-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
-.partners-section .featured-projects-header h2 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #3e1c0a;
-}
-
-.partners-section .see-all-btn {
-  background: transparent;
-  border: 1px solid #3e1c0a;
-  color: #3e1c0a;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.partners-section .see-all-btn:hover {
-  background-color: #96422F;
-
-  color: white;
-}
-
-.partners-section .project-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cột */
-  gap: 20px;
-}
-.partners-section .project-card {
-  overflow: hidden;
-  flex: 1;
-  min-width: 280px;
-  max-width: 100%;
-  text-align: left;
-}
-
-.partners-section .project-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.partners-section .project-info {
-  padding-top: 5px;
-  color: #43230C;
-}
-
-.partners-section .project-info__title {
-  font-size: 21px;
-  color: #96422F;
-}
-.partners-section .project-info__description {
-  margin: 0;
-  font-size: 14px;
-}
-/* Áp dụng chỉ trong phần .project-card */
-.project-card .image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 240px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* Chỉ hiện trong ảnh bên trong project-card */
-.project-card .image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Badge nằm trên ảnh */
-.project-card .image-wrapper .news-badge {
-  position: absolute;
-  width: 100px;
-  text-align: center;
-  top: 12px;
-  left: 12px;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: white;
-  padding: 4px 12px;
-  border-radius: 4.75px;
-  font-size: 14px;
-  font-weight: 500;
-  backdrop-filter: blur(4px);
-}
 
 
-.partners-section .tab-menu {
-  display: flex;
-  gap: 40px; /* hoặc 32px nếu muốn nhỏ hơn */
-  align-items: center;
-  margin-bottom: 32px;
-}
 
-.partners-section .tab {
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: #43230C;
-  font-weight: 500;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
-@media (max-width: 1024px) {
-  .partners-section .project-list {
-    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 cột */
-  }
-}
 
-@media (max-width: 600px) {
-  .partners-section .project-list {
-    grid-template-columns: 1fr; /* Mobile: 1 cột */
-  }
-}
-@media (max-width: 768px) {
-  .partners-section .tab-menu {
-    gap: 24px;
-  }
- 
-  .partners-section .tab {
-    font-size: 16px;
-  }
-}
 
 @media (max-width: 480px) {
-  .partners-section .tab-menu {
-    gap: 16px;
-    justify-content: center; /* Canh giữa nếu ít tab */
-  }
   .partner-logos {
     padding-bottom: 0px;
   }
-  .partners-section .tab {
-    font-size: 14px;
-  }
-}
-.partners-section .tab:hover {
-  border-bottom: 2px solid #3a2f25;
 }
 
-.partners-section .tab.active {
-  border-bottom: 2px solid #3a2f25;
-  font-weight: bold;
-}
+
 @media (max-width: 600px) {
   .partners-section {
     padding: 40px 0px;
