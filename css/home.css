@@ -43,78 +43,19 @@ padding-top: 60px;
   opacity: 0.85;
 }
 
-
-.hero-section {
-  position: relative;
-  height: 100vh;
-  color: white;
-  font-weight: 400;
+.navbar .main-content-container{
   display: flex;
-  align-items: flex-end; /* đẩy content xuống dưới */
-  justify-content: flex-start; /* căn trái */
-  padding: 50px 60px;
-  overflow: hidden;
+  justify-content: space-between;
 }
+
 .main-content-container {
   position: relative; /* để nằm trên z-index mặc định */
   z-index: 1;
-}
-/* swiper container làm nền full cover và nằm dưới */
-.background-swiper {
-  position: absolute !important;
-  top: 0;
-  left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
-  height: 100%;
-  z-index: 0;
 }
-
-/* từng slide ảnh nền full cover */
-.background-swiper > swiper-slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-.lazy-bg {
-  background-size: cover;
-  background-position: center;
-  transition: background-image 0.5s ease-in-out;
-}
-
-.hidden-swiper {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.visible-swiper {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 30px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 20px 15px;
-  }
-}
-
-
-.hero-content h1 {
-  font-size: 80px;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-
 .buttons {
   display: flex;
   gap: 10px;
@@ -173,6 +114,41 @@ padding-top: 60px;
   background: white;
   border-radius: 2px;
   transition: all 0.3s ease;
+}
+
+
+.mobile-background {
+  display: none;
+  width: 100%;
+  height: 100vh; /* chiều cao giống swiper */
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  z-index: 0;
+ background-position: 0% center;
+}
+
+/* Nội dung container trên ảnh nền */
+
+.btn-mobile {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute; /* hoặc tùy chỉnh sao cho không ảnh hưởng layout */
+}
+
+@media (max-width: 768px) {
+  .btn-desktop {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .btn-mobile {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    position: static; /* trở lại bình thường */
+  }
 }
 
 /* Responsive - hiện nút burger trên mobile */
@@ -234,16 +210,7 @@ padding-top: 60px;
     height: 24px;
   }
 
-  .hero-content h1 {
-    font-size: 24px;
-  }
-
-  .hero-content {
-    bottom: 20px;
-    left: 15px;
-    right: 15px;
-  }
-
+ 
   .btn {
     padding: 6px 12px;
     font-size: 11px;
@@ -252,14 +219,3 @@ padding-top: 60px;
 }
 
 
-
-.main-content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
-}
-.navbar .main-content-container{
-  display: flex;
-  justify-content: space-between;
-}

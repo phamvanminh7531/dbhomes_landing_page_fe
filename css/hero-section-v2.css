@@ -1,4 +1,3 @@
-/* Mặc định desktop */
 .hero-section-v2 {
   position: relative;
   height: 100vh;
@@ -9,10 +8,23 @@
   justify-content: flex-start; /* căn trái */
   padding: 50px 60px;
   overflow: hidden;
-  background-image: url("../images/aboutusbg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom; /* cắt ảnh phía trên */
+}
+
+.hero-bg-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ height: 100dvh;
+  object-fit: cover; 
+  object-position: center bottom; 
+  z-index: 0; 
+}
+
+
+.hero-section-v2 .main-content-container {
+  position: relative; 
+  z-index: 1;
 }
 
 .hero-section-v2 .hero-content h1 {
@@ -41,15 +53,14 @@
   font-weight: 600;
   color: #FFF7EC;
   margin-top: 10px;
+  white-space: pre-line;
 }
 
-/* Responsive */
-
-/* Tablet & nhỏ hơn */
+/* Responsive giữ nguyên, chỉ thêm chỉnh sửa nhỏ nếu cần */
 @media (max-width: 1024px) {
   .hero-section-v2 {
     padding: 40px 40px;
-    height: 80vh;
+
   }
 
   .hero-section-v2 .hero-content h1 {
@@ -61,12 +72,10 @@
   }
 }
 
-/* Mobile nhỏ */
 @media (max-width: 768px) {
   .hero-section-v2 {
     padding: 30px 20px;
-    height: 70vh;
-
+ 
   }
 
   .hero-section-v2 .hero-content h1 {
@@ -77,15 +86,14 @@
   .hero-section-v2 .hero-subtitle {
     font-size: 24px;
     margin-top: 6px;
+    white-space: normal;
   }
-
 }
 
-/* Siêu nhỏ (như điện thoại nhỏ) */
 @media (max-width: 480px) {
   .hero-section-v2 {
     padding: 20px 15px;
-    height: 60vh;
+
   }
 
   .hero-section-v2 .hero-content h1 {
