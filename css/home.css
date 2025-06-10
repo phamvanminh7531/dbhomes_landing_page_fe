@@ -22,25 +22,39 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  transition:
+    height 0.3s ease,
+    background 0.3s ease,
+    backdrop-filter 0.3s ease,
+    border-bottom 0.3s ease;
 }
-/* Khi cuộn: thêm hiệu ứng blur */
+
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  height:75px;
+  height: 75px;
 }
+
+.navbar .nav-links a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
 .navbar.scrolled .nav-links a {
   color: #5b2c0f;
 }
+
+.navbar .logo img {
+  transition: filter 0.3s ease;
+}
+
 .navbar.scrolled .logo img {
   filter: brightness(0) saturate(100%) invert(17%) sepia(67%) saturate(599%) hue-rotate(0deg) brightness(90%) contrast(85%);
-  /* hoặc bạn có thể đổi sang ảnh logo khác màu tối nếu muốn */
 }
+
 
 .logo img {
   height: 60px;
