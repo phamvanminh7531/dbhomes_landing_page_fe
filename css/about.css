@@ -2,7 +2,6 @@
 
 .about-section {
   position: relative;
-  background-image: url('../images/section3bg.png');
   background-size: cover; /* Phóng ảnh để vừa khít cả khung */
   background-repeat: no-repeat;
   background-position: bottom center; 
