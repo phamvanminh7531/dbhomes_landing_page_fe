@@ -60,6 +60,9 @@ background-color: transparent;
 .product-section__item__image-wrapper:hover{
   background-color: #C8B497;
 }
+.product-section__item__image-wrapper.active {
+ background-color: #C8B497;
+}
 .product-section__item p {
   font-size: 16px;
   margin: 0;
