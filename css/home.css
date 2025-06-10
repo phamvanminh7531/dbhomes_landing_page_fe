@@ -11,7 +11,6 @@
 body, html {
 
 }
-
 .navbar {
   width: 100%;
   height: 100px;
@@ -27,7 +26,6 @@ body, html {
 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
-
 /* Khi cuộn: thêm hiệu ứng blur */
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.5);
@@ -39,7 +37,6 @@ body, html {
 .navbar.scrolled .nav-links a {
   color: #5b2c0f;
 }
-
 .navbar.scrolled .logo img {
   filter: brightness(0) saturate(100%) invert(17%) sepia(67%) saturate(599%) hue-rotate(0deg) brightness(90%) contrast(85%);
   /* hoặc bạn có thể đổi sang ảnh logo khác màu tối nếu muốn */
