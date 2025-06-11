@@ -191,6 +191,7 @@ background-color: transparent;
   .product-section__slider-wrapper {
     overflow: hidden;
     position: relative;
+    height: 235px;
   }
 
   .product-section__slider {
