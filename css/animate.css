@@ -1,0 +1,95 @@
+/* Base */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.scroll-animate.animated {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fade variants */
+.scroll-animate[data-animate="fade-up"] {
+  transform: translateY(40px);
+}
+.scroll-animate[data-animate="fade-down"] {
+  transform: translateY(-40px);
+}
+.scroll-animate[data-animate="fade-left"] {
+  transform: translateX(-40px);
+}
+.scroll-animate[data-animate="fade-right"] {
+  transform: translateX(40px);
+}
+
+/* Zoom variants */
+.scroll-animate[data-animate="zoom-in"] {
+  transform: scale(0.8);
+}
+.scroll-animate[data-animate="zoom-out"] {
+  transform: scale(1.2);
+}
+
+/* Flip variants */
+.scroll-animate[data-animate="flip-left"] {
+  transform: rotateY(90deg);
+  transform-origin: left;
+}
+.scroll-animate[data-animate="flip-right"] {
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+/* Rotate in */
+.scroll-animate[data-animate="rotate-in"] {
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+/* Slide variants */
+.scroll-animate[data-animate="slide-up"] {
+  transform: translateY(100%);
+}
+.scroll-animate[data-animate="slide-down"] {
+  transform: translateY(-100%);
+}
+.scroll-animate[data-animate="slide-left"] {
+  transform: translateX(-100%);
+}
+.scroll-animate[data-animate="slide-right"] {
+  transform: translateX(100%);
+}
+/* Fade up left */
+.scroll-animate[data-animate="fade-up-left"] {
+  transform: translate(-40px, 40px);
+}
+
+/* Fade up right */
+.scroll-animate[data-animate="fade-up-right"] {
+  transform: translate(40px, 40px);
+}
+
+/* Fade down left */
+.scroll-animate[data-animate="fade-down-left"] {
+  transform: translate(-40px, -40px);
+}
+
+/* Fade down right */
+.scroll-animate[data-animate="fade-down-right"] {
+  transform: translate(40px, -40px);
+}
+
+/* Reset transform after animate */
+.scroll-animate.animated[data-animate="fade-up-left"],
+.scroll-animate.animated[data-animate="fade-up-right"],
+.scroll-animate.animated[data-animate="fade-down-left"],
+.scroll-animate.animated[data-animate="fade-down-right"] {
+  transform: none;
+}
+
+/* After animation (reset transform) */
+.scroll-animate.animated[data-animate] {
+  transform: none;
+}
