@@ -89,6 +89,62 @@ transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezi
   transform: scale(0.9);
 }
 
+
+.slide-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px 16px 16px 16px; /* có thể giảm padding bên trái nếu muốn */
+  width: 100%;
+
+  text-align: left;  /* canh lề trái */
+  transition: all 0.8s ease-in-out
+}
+.highlighted-projects swiper-slide:not(.swiper-slide-active) .slide-info {
+  padding: 16px 16px 36px 52px; /* padding khác, ví dụ giảm padding trái phải */
+  /* Hoặc bạn có thể set padding-left khác để căn chỉnh chữ */
+    transition: all 0.8s ease-in-out;
+}
+.slide-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: left; /* canh lề trái */
+}
+
+.slide-description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left; /* canh lề trái */
+}
+
+
+/* Hover Effect */
+.slide-wrapper:hover .slide-info {
+  padding-top: 32px;
+}
+
+.slide-wrapper:hover .slide-title {
+  transform: translateY(-20px);
+}
+
+.slide-wrapper:hover .slide-description {
+  opacity: 1;
+  max-height: 200px;
+}
+
 .custom-pagination {
   display: flex;
   justify-content: center;
@@ -175,62 +231,6 @@ transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezi
   .nav-btn {
     font-size: 20px;
   }
-}
-
-
-.slide-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.slide-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 16px 16px 16px 16px; /* có thể giảm padding bên trái nếu muốn */
-  width: 100%;
-
-  text-align: left;  /* canh lề trái */
-  transition: all 0.8s ease-in-out
-}
-.highlighted-projects swiper-slide:not(.swiper-slide-active) .slide-info {
-  padding: 16px 16px 36px 52px; /* padding khác, ví dụ giảm padding trái phải */
-  /* Hoặc bạn có thể set padding-left khác để căn chỉnh chữ */
-    transition: all 0.8s ease-in-out;
-}
-.slide-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  transition: all 0.4s ease;
-  position: relative;
-  text-align: left; /* canh lề trái */
-}
-
-.slide-description {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  color: #fff;
-  font-size: 14px;
-  margin-top: 8px;
-  text-align: left; /* canh lề trái */
-}
-
-
-/* Hover Effect */
-.slide-wrapper:hover .slide-info {
-  padding-top: 32px;
-}
-
-.slide-wrapper:hover .slide-title {
-  transform: translateY(-20px);
-}
-
-.slide-wrapper:hover .slide-description {
-  opacity: 1;
-  max-height: 200px;
 }
 
 @media (max-width: 768px) {
