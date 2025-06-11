@@ -85,7 +85,7 @@ function updateSlider() {
     const nextBtn = document.getElementById('next-btn');
 
     const isSmallScreen = window.innerWidth <= 576;
-    const topValue = isSmallScreen ? '47%' : (visibleCount < 5 ? '35%' : '47%');
+    const topValue = isSmallScreen ? '47%' : (visibleCount < 5 ? '47%' : '47%');
 
     prevBtn.style.top = topValue;
     nextBtn.style.top = topValue;

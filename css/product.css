@@ -40,7 +40,8 @@
 .product-section__slider {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-auto-rows: 226px;
+
   gap: 24px;
   transition: transform 0.5s ease;
   width: 100%;
@@ -100,6 +101,8 @@ background-color: transparent;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 214px;
+  grid-row: span 1;
 }
 .product-section__item {
   opacity: 0;
