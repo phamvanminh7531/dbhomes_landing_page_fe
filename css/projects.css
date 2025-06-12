@@ -4,7 +4,6 @@
 }
 .projects-section__filter-bar {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 24px;
@@ -14,6 +13,7 @@
   font-weight: 500;
   color: #43230C;
   margin-right: 8px;
+ 
 }
 
 .filter-button {
@@ -28,6 +28,9 @@
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s ease;
+  min-width: 160px;
+  align-items: center;
+    justify-content: center;
 }
 
 .filter-button--active {
@@ -35,14 +38,89 @@
   color: white;
   border-color: #A34830;
 }
-
+.filter-tags-wrapper{
+  display: flex;
+  gap:12px
+}
 .filter-tag {
   background-color: #C8B497;
-  padding: 6px 10px;
+  padding: 10px 20px;
   border-radius: 4px;
   font-size: 14px;
   color: #43230C;
+  height: 40px;
+  text-align: center;
+  width:120px;
 }
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+  padding: 8px 0;
+  list-style: none;
+  margin-top: 8px; /* thêm khoảng cách nếu cần */
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+  max-height: 500px; /* hoặc auto nếu bạn dùng JS */
+}
+
+.dropdown-menu li {
+  position: relative; /* cần thiết để pseudo-element căn theo li */
+  padding: 8px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-menu li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px; /* cách lề trái */
+  width: 80%;  /* chiều dài đường gạch */
+  height: 1px;
+  background-color: #43230c47;
+}
+
+.dropdown-menu li:last-child::after {
+  display: none; /* không có gạch dưới ở item cuối */
+}
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+.dropdown-menu {
+  /* Reset mặc định của ul */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+  padding: 8px 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  background: none;
+
+}
+
 
 .projects-section__search-wrapper {
   margin-left: auto;
@@ -50,6 +128,7 @@
   align-items: center;
   border-bottom: 1px solid #43230C;
   padding-bottom: 4px;
+   height:30px;
 }
 
 .projects-section__search-input {
@@ -60,6 +139,16 @@
   background: transparent;
   width: 160px;
   color: #43230C;
+}
+.filter-icon {
+  /* Mặc định: màu #43230C */
+  filter: brightness(0) saturate(100%) invert(17%) sepia(34%) saturate(749%) hue-rotate(343deg) brightness(95%) contrast(90%);
+  transition: filter 0.3s ease;
+}
+
+.filter-button--active .filter-icon {
+  /* Trắng */
+  filter: brightness(0) invert(1);
 }
 
 .projects-section__search-wrapper i.icon-search {
@@ -150,6 +239,12 @@
   }
   .projects-section__title {
   font-size: 24px;
- 
+}
+.projects-section__filter-bar{
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.dropdown.open .dropdown-menu {
+width: 100px;
 }
 }

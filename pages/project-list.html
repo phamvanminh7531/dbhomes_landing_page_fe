@@ -68,28 +68,43 @@
   </section>
   <section class="projects-section" style="background-image: url('../images/bg.png');">
     <div class="main-content-container">
-      <div class="projects-section__filter-bar">
-        <span class="projects-section__filter-label">Bộ lọc</span>
+     <div class="projects-section__filter-bar">
+  <span class="projects-section__filter-label">Bộ lọc</span>
 
-        <button class="filter-button">
-          <img src="../images/homeicon.png" alt="icon home" class="filter-icon" />
-          Quy mô
-        </button>
+  <div class="dropdown">
+    <button class="filter-button dropdown-toggle">
+      <img src="../images/homeicon.png" alt="icon home" class="filter-icon" />
+      Quy mô
+ 
+    </button>
+    <ul class="dropdown-menu">
+      <li>Nhỏ</li>
+      <li>Vừa</li>
+      <li>Lớn</li>
+    </ul>
+  </div>
 
-        <button class="filter-button filter-button--active">
-          <img src="../images/brushicon.png" alt="icon style" class="filter-icon" />
-          Phong cách
-        </button>
+  <div class="dropdown">
+    <button class="filter-button dropdown-toggle ">
+      <img src="../images/brushicon.png" alt="icon style" class="filter-icon" />
+      Phong cách
+
+    </button>
+    <ul class="dropdown-menu">
+      <li>Hiện đại</li>
+      <li>Cổ điển</li>
+      <li>Tối giản</li>
+    </ul>
+  </div>
+<div id="filter-tags-container" class="filter-tags-wrapper"></div>
 
 
-        <div class="filter-tag">x Căn hộ 2PN</div>
-        <div class="filter-tag">x Hiện đại</div>
+  <div class="projects-section__search-wrapper">
+    <input type="text" class="projects-section__search-input" placeholder="Tìm kiếm..." />
+    <img src="../images/iconsearch.png" alt="search icon" class="search-icon" />
+  </div>
+     </div>
 
-        <div class="projects-section__search-wrapper">
-          <input type="text" class="projects-section__search-input" placeholder="Tìm kiếm..." />
-          <img src="../images/iconsearch.png" alt="search icon" class="search-icon" />
-        </div>
-      </div>
       <div class="projects-section__grid">
         
         <div class="projects-section__item">
@@ -362,6 +377,7 @@
   <script src="../js/animation-footer.js"></script>
   <script src="../js/navbar.js"></script>
     <script src="../js/pagnigation-project.js"></script>
+        <script src="../js/project-filter-dropdown.js"></script>
 </body>
 
 </html>
