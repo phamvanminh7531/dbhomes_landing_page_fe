@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const projectList = document.querySelector('.project-list'); // từ 'projects-section'
+  const projectList = document.querySelector('.featured-projects'); // từ 'projects-section'
   const projectCards = projectList.querySelectorAll('.project-card'); // từ 'projects-section__item'
   const pagination = document.querySelector('.projects-section__pagination');
   const prevArrow = pagination.querySelector('.projects-section__arrow:first-child');
