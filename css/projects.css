@@ -70,7 +70,7 @@
 
 .projects-section__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-content: center;
 }
@@ -143,4 +143,13 @@
   color: #96422F;
   font-weight: 600;
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .projects-section__grid {
+    grid-template-columns: 1fr; /* 1 cột */
+  }
+  .projects-section__title {
+  font-size: 24px;
+ 
+}
 }
