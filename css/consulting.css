@@ -20,7 +20,7 @@
 .consultation-image img {
   width: 100%;
   max-width: 500px;
-  height: auto;
+  height: 502px;
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

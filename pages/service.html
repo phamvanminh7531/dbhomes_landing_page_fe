@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="../css/faq.css" />
   <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <meta name="robots" content="index, follow">
   <meta name="author" content="DBHomes">
   <meta name="keywords" content="thiết kế nội thất, bất động sản, DBHomes, nhà đẹp">
@@ -72,24 +72,34 @@
   <section class="services-section" style="padding-top: 60px; background-image: url('../images/bg.png');">
     <div class="main-content-container">
       <div class="container">
-        <p class="subtitle">Dịch vụ của chúng tôi</p>
-        <h2 class="title">Tạo không gian sống hoàn hảo,
-          từ thiết kế đến thi công</h2>
-        <p class="description">
-          Chúng tôi cung cấp dịch vụ thiết kế, thi công và lắp đặt nội thất tối giản, hiện đại, mang lại không gian sống
-          hoàn hảo và tiện nghi.
-        </p>
+        <div class="subtitle" data-aos="fade-down" data-aos-duration="1000">
+          <p>Dịch vụ của chúng tôi</p>
+        </div>
+        <h2 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Tạo không gian sống hoàn hảo, từ thiết kế đến thi công
+        </h2>
+        <div class="description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <p>
+            Chúng tôi cung cấp dịch vụ thiết kế, thi công và lắp đặt nội thất tối giản, hiện đại, mang lại không gian
+            sống
+            hoàn hảo và tiện nghi.
+          </p>
+        </div>
 
         <div class="service-grid">
-          <div class="service-card">
+          <div class="service-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="0">
             <div class="card-inner">
               <div class="card-front">
                 <div class="icon">
                   <img src="../images/icon1.png" alt="Thiết kế icon" loading="lazy">
                 </div>
-                <h3>Thiết kế & Thi công nội thất</h3>
-                <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
-                  không gian sống tinh tế.</p>
+                <div class="title">
+                  <h3>Thiết kế & Thi công nội thất</h3>
+                </div>
+                <div class="desc">
+                  <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang
+                    đến không gian sống tinh tế.</p>
+                </div>
               </div>
               <div class="card-back">
                 <img src="../images/sv1.png" alt="Thiết kế nội thất" loading="lazy">
@@ -97,15 +107,19 @@
             </div>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="200">
             <div class="card-inner">
               <div class="card-front">
                 <div class="icon">
                   <img src="../images/icon2.png" alt="Thiết kế icon" loading="lazy">
                 </div>
-                <h3>Thi công nội thất</h3>
-                <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
-                  không gian sống tinh tế.</p>
+                <div class="title">
+                  <h3>Thi công nội thất</h3>
+                </div>
+                <div class="desc">
+                  <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang
+                    đến không gian sống tinh tế.</p>
+                </div>
               </div>
               <div class="card-back">
                 <img src="../images/sv2.png" alt="Thi công nội thất" loading="lazy">
@@ -113,220 +127,227 @@
             </div>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400">
             <div class="card-inner">
               <div class="card-front">
                 <div class="icon">
                   <img src="../images/icon3.png" alt="Thiết kế icon" loading="lazy">
                 </div>
-                <h3>Cung cấp & Lắp đặt nội thất</h3>
-                <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang đến
-                  không gian sống tinh tế.</p>
+                <div class="title">
+                  <h3>Cung cấp & Lắp đặt nội thất</h3>
+                </div>
+                <div class="desc">
+                  <p>DBHomes thi công nội thất với vật liệu cao cấp, đảm bảo độ bền, thẩm mỹ và tối ưu công năng, mang
+                    đến không gian sống tinh tế.</p>
+                </div>
               </div>
               <div class="card-back">
                 <img src="../images/sv3.png" alt="Lắp đặt nội thất" loading="lazy">
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="workflow" style="background-image: url('../images/bg.png');">
-    <div class="main-content-container">
-      <h2 class="workflow__title">Quy trình làm việc</h2>
-      <div class="workflow__desc">
-        <p>
-          DBHomes áp dụng quy trình chuyên nghiệp, kiểm soát chặt chẽ từng bước để đảm bảo chất lượng cuối cùng.
-        </p>
-      </div>
 
-      <div class="workflow__grid">
-        <!-- Bước 1 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">1</span>
-          </div>
-          <h3 class="workflow__step-title">Tiếp nhận thông tin</h3>
-          <div class="workflow__step-desc">
-            <p>
-              Trao đổi nhu cầu, ngân sách và thời gian với khách hàng.
-            </p>
-          </div>
-
-
-          <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
-        </div>
-
-
-        <!-- Bước 2 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">2</span>
-          </div>
-          <h3 class="workflow__step-title">Đề xuất phương án</h3>
-          <div class="workflow__step-desc">
-            <p>Trình bày layout, mood board, ghi chú giải thích sơ đồ bố trí.</p>
-          </div>
-          <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
-        </div>
-
-        <!-- Bước 3 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">3</span>
-          </div>
-          <h3 class="workflow__step-title">Thống nhất thiết kế</h3>
-          <div class="workflow__step-desc">
-            <p>Chốt thiết kế 3D, layout, vật liệu & mô tả chi tiết.</p>
-          </div>
-
-          <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
-        </div>
-
-        <!-- Bước 4 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">4</span>
-          </div>
-          <h3 class="workflow__step-title">Dự toán kinh phí</h3>
-          <div class="workflow__step-desc">
-            <p>Lập bảng báo giá và vật liệu chi tiết.</p>
-          </div>
-        </div>
-
-        <!-- Bước 5 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">5</span>
-          </div>
-          <h3 class="workflow__step-title">Ký hợp đồng</h3>
-          <div class="workflow__step-desc">
-            <p>Duyệt bản vẽ, tài liệu hướng dẫn sử dụng & phương án thi công.</p>
-          </div>
-          <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
-        </div>
-
-        <!-- Bước 6 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">6</span>
-          </div>
-          <h3 class="workflow__step-title">Thi công</h3>
-          <div class="workflow__step-desc">
-            <p>Khởi công, theo dõi tiến độ, cập nhật báo cáo và xử lý phát sinh.</p>
-          </div>
-          <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
-        </div>
-
-        <!-- Bước 7 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">7</span>
-          </div>
-          <h3 class="workflow__step-title">Nghiệm thu – Bàn giao</h3>
-          <div class="workflow__step-desc">
-            <p>Kiểm tra hoàn thiện, bàn giao công trình và hướng dẫn sử dụng.</p>
-          </div>
-        </div>
-
-        <!-- Bước 8 -->
-        <div class="workflow__item">
-          <div class="workflow__icon--custom">
-            <span class="workflow__step-label">(Bước)</span>
-            <span class="workflow__step-number">8</span>
-          </div>
-          <h3 class="workflow__step-title">Bảo hành – Bảo trì</h3>
-          <div class="workflow__step-desc">
-            <p>Bảo hành 12 tháng, xử lý và phát sinh trong 48h.</p>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="faq-section" style="background-image: url('../images/bg.png');">
-    <div class="main-content-container">
-      <div class="faq-container">
-        <!-- Bên trái: Câu hỏi -->
-        <div class="faq-left">
-          <h2 class="faq-title">Các câu hỏi thường gặp</h2>
-          <div class="faq-item active">
-            <div class="faq-question">
-              Tôi cần chuẩn bị những gì trước khi thuê thiết kế nội thất?
-              <span class="faq-toggle">−</span>
-            </div>
-            <div class="faq-answer">
-              Trước khi bắt đầu hành trình thiết kế nội thất, hãy xác định rõ ngân sách, phong cách yêu thích
-              và nhu cầu sử dụng của từng không gian. Tìm hiểu hình ảnh tham khảo từ các nguồn uy tín để truyền
-              đạt ý tưởng một cách hiệu quả tới kiến trúc sư của DBHOMES.
-            </div>
-          </div>
+<section class="workflow" style="background-image: url('../images/bg.png');">
+  <div class="main-content-container">
+    <h2 class="workflow__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Quy trình làm việc</h2>
+    <div class="workflow__desc" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+      <p>
+        DBHomes áp dụng quy trình chuyên nghiệp, kiểm soát chặt chẽ từng bước để đảm bảo chất lượng cuối cùng.
+      </p>
+    </div>
 
-          <div class="faq-item">
-            <div class="faq-question">
-              Vì sao nên chọn DBHomes?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer"></div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              Làm thế nào để chọn được phong cách thiết kế nội thất phù hợp với mình?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer"></div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              Tôi nên chọn vật liệu nào cho nội thất để đảm bảo tính thẩm mỹ và độ bền?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer"></div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              Các bước thiết kế và thi công của DBHOMES gồm những gì?
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer"></div>
-          </div>
+    <div class="workflow__grid">
+      <!-- Bước 1 -->
+      <div class="workflow__item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">1</span>
         </div>
+        <h3 class="workflow__step-title">Tiếp nhận thông tin</h3>
+        <div class="workflow__step-desc">
+          <p>
+            Trao đổi nhu cầu, ngân sách và thời gian với khách hàng.
+          </p>
+        </div>
+        <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
+      </div>
 
-        <!-- Bên phải: Hình ảnh -->
-        <div class="faq-right">
-          <img src="../images/faqimg.png" alt="Sofa DBHomes" />
+      <!-- Bước 2 -->
+      <div class="workflow__item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">2</span>
+        </div>
+        <h3 class="workflow__step-title">Đề xuất phương án</h3>
+        <div class="workflow__step-desc">
+          <p>Trình bày layout, mood board, ghi chú giải thích sơ đồ bố trí.</p>
+        </div>
+        <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
+      </div>
+
+      <!-- Bước 3 -->
+      <div class="workflow__item" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">3</span>
+        </div>
+        <h3 class="workflow__step-title">Thống nhất thiết kế</h3>
+        <div class="workflow__step-desc">
+          <p>Chốt thiết kế 3D, layout, vật liệu & mô tả chi tiết.</p>
+        </div>
+        <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
+      </div>
+
+      <!-- Bước 4 -->
+      <div class="workflow__item" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">4</span>
+        </div>
+        <h3 class="workflow__step-title">Dự toán kinh phí</h3>
+        <div class="workflow__step-desc">
+          <p>Lập bảng báo giá và vật liệu chi tiết.</p>
+        </div>
+      </div>
+
+      <!-- Bước 5 -->
+      <div class="workflow__item" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">5</span>
+        </div>
+        <h3 class="workflow__step-title">Ký hợp đồng</h3>
+        <div class="workflow__step-desc">
+          <p>Duyệt bản vẽ, tài liệu hướng dẫn sử dụng & phương án thi công.</p>
+        </div>
+        <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
+      </div>
+
+      <!-- Bước 6 -->
+      <div class="workflow__item" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">6</span>
+        </div>
+        <h3 class="workflow__step-title">Thi công</h3>
+        <div class="workflow__step-desc">
+          <p>Khởi công, theo dõi tiến độ, cập nhật báo cáo và xử lý phát sinh.</p>
+        </div>
+        <img src="../images/arrow.svg" alt="Line circle icon" class="workflow__edge-icon" />
+      </div>
+
+      <!-- Bước 7 -->
+      <div class="workflow__item" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">7</span>
+        </div>
+        <h3 class="workflow__step-title">Nghiệm thu – Bàn giao</h3>
+        <div class="workflow__step-desc">
+          <p>Kiểm tra hoàn thiện, bàn giao công trình và hướng dẫn sử dụng.</p>
+        </div>
+      </div>
+
+      <!-- Bước 8 -->
+      <div class="workflow__item" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="workflow__icon--custom">
+          <span class="workflow__step-label">(Bước)</span>
+          <span class="workflow__step-number">8</span>
+        </div>
+        <h3 class="workflow__step-title">Bảo hành – Bảo trì</h3>
+        <div class="workflow__step-desc">
+          <p>Bảo hành 12 tháng, xử lý và phát sinh trong 48h.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="contact-section" style="background-image: url('../images/Section9bg.png');">
-    <div class="main-content-container">
-      <div class="contact-section__overlay">
-        <div class="contact-section__container">
-          <h2 class="contact-section__title">Đồng hành cùng bạn<br>kiến tạo tổ ấm.</h2>
-          <form class="contact-section__form">
-            <input type="text" placeholder="Họ và Tên *" required />
-            <input type="tel" placeholder="Số điện thoại *" required />
-            <input type="text" placeholder="Tỉnh/Thành phố *" required />
-            <input placeholder="Nội dung yêu cầu" rows="4"></textarea>
-            <button type="submit">Gửi yêu cầu</button>
-          </form>
+
+<section class="faq-section" style="background-image: url('../images/bg.png');" >
+  <div class="main-content-container">
+    <div class="faq-container">
+      <!-- Bên trái: Câu hỏi -->
+      <div class="faq-left" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+        <h2 class="faq-title">Các câu hỏi thường gặp</h2>
+
+        <div class="faq-item active" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="faq-question">
+            Tôi cần chuẩn bị những gì trước khi thuê thiết kế nội thất?
+            <span class="faq-toggle">−</span>
+          </div>
+          <div class="faq-answer">
+            Trước khi bắt đầu hành trình thiết kế nội thất, hãy xác định rõ ngân sách, phong cách yêu thích
+            và nhu cầu sử dụng của từng không gian. Tìm hiểu hình ảnh tham khảo từ các nguồn uy tín để truyền
+            đạt ý tưởng một cách hiệu quả tới kiến trúc sư của DBHOMES.
+          </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <div class="faq-question">
+            Vì sao nên chọn DBHomes?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer"></div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+          <div class="faq-question">
+            Làm thế nào để chọn được phong cách thiết kế nội thất phù hợp với mình?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer"></div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+          <div class="faq-question">
+            Tôi nên chọn vật liệu nào cho nội thất để đảm bảo tính thẩm mỹ và độ bền?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer"></div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+          <div class="faq-question">
+            Các bước thiết kế và thi công của DBHOMES gồm những gì?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer"></div>
         </div>
       </div>
+
+      <!-- Bên phải: Hình ảnh -->
+      <div class="faq-right" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+        <img src="../images/faqimg.png" alt="Sofa DBHomes" />
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<section class="contact-section" style="background-image: url('../images/Section9bg.png');">
+  <div class="main-content-container">
+    <div class="contact-section__overlay">
+      <div class="contact-section__container" data-aos="fade-up" data-aos-duration="1200">
+        <h2 class="contact-section__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+          Đồng hành cùng bạn<br>kiến tạo tổ ấm.
+        </h2>
+        <form class="contact-section__form" >
+          <input type="text" placeholder="Họ và Tên *" data-aos="fade-up" required data-aos-delay="200" data-aos-duration="1200" />
+          <input type="tel" placeholder="Số điện thoại *"  required   data-aos="fade-up"data-aos-delay="300" data-aos-duration="1200" />
+          <input type="text" placeholder="Tỉnh/Thành phố *"   data-aos="fade-up" required  data-aos-delay="400" data-aos-duration="1200"/>
+          <textarea placeholder="Nội dung yêu cầu" rows="4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200"></textarea>
+          <button type="submit" data-aos-delay="200"  data-aos="fade-up" data-aos-duration="1200">Gửi yêu cầu</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
   <section class="footer-db">
     <div class="main-content-container">
       <div class="footer-db-container">
@@ -413,6 +434,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/faq.js"></script>
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="../js/animation-footer.js"></script>
   <script src="../js/navbar.js"></script>
 </body>
