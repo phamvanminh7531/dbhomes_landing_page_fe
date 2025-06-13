@@ -59,22 +59,6 @@
   border-radius: 50%;
 }
 
-.feedback-news-section__news {
-  margin-top: 40px;
-}
-
-.feedback-news-section__news-title {
-  font-size: 48px;
- 
-  color: #4a2c15;
-  font-weight: 600;
-}
-.feedback-news-section__news-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px; /* đẩy xuống dưới một chút */
-}
 
 .feedback-news-section__articles {
   display: flex;
@@ -145,28 +129,11 @@
   color: #43230C;
   font-weight: 300;
 }
+.feedback-news-section__news {
+  margin-top: 40px;
+}
 
-.feedback-news-section__view-all {
 
-  display: block;
-  background: none;
-  border: 1px solid #c19b76;
-  padding: 8px 16px;
-  border-radius: 6px;
-  color: #4a2c15;
-  cursor: pointer;
-}
-.desktop-only {
-  display: inline-block;
-}
-.mobile-only {
-  display: none;
-}
-.feedback-news-section__view-all:hover {
-    background-color: #96422F;
-
-  color: white;
-}
 .feedback-news-section swiper-slide {
   background-color: #ffffff;
   border-radius: 12px;
@@ -270,7 +237,7 @@
   }
   .mobile-only {
     display: flex;
-       justify-content: flex-start;
+    justify-content: flex-start;
     margin-top: 16px;
   }
    .mySwiper2::part(container)  {

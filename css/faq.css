@@ -73,6 +73,7 @@
   border-radius: 10px;
   height:585px;
 }
+
 @media (max-width: 768px) {
   .faq-title {
     font-size: 36px; /* Giảm kích thước tiêu đề */

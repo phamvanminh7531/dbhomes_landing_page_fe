@@ -144,7 +144,38 @@
   cursor: pointer;
   transition: border-color 0.3s ease;
 }
+.featured-projects__news-title h3 {
+  font-size: 36px;
+  color: #4a2c15;
+  font-weight: 400;
+}
+.featured-projects__news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* đẩy xuống dưới một chút */
+}
 
+.featured-projects__view-all {
+  display: block;
+  background: none;
+  border: 1px solid #c19b76;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #4a2c15;
+  cursor: pointer;
+}
+.desktop-only {
+  display: inline-block;
+}
+.mobile-only {
+  display: none;
+}
+.feedback-news-section__view-all:hover {
+    background-color: #96422F;
+
+  color: white;
+}
 @media (max-width: 768px) {
 .featured-projects  .tab-menu {
     gap: 24px;
@@ -177,6 +208,14 @@
 @media (max-width: 1024px) {
 .featured-projects .project-list {
     grid-template-columns: repeat(2, 1fr); /* Tablet: 2 cột */
+  }
+    .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 16px;
   }
 }
 
