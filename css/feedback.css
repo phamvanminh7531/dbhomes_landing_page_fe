@@ -1,8 +1,8 @@
 .feedback-news-section {
   background-repeat: repeat;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   display: flex;
   align-items: center;
   justify-content: center;
