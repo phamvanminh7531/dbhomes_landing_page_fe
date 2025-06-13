@@ -38,6 +38,7 @@
 }
 
 .factory-button {
+  position: relative;
   display: inline-block;
   background-color: transparent;
   color: white;
@@ -45,14 +46,35 @@
   border-radius: 4px;
   font-weight: 500;
   text-decoration: none;
-  transition: background-color 0.3s ease;
   border: 1px solid white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 0;
 }
 
+/* Nền trắng trượt từ trên xuống */
+.factory-button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1; /* QUAN TRỌNG: đẩy nền xuống dưới text */
+  transition: top 0.5s ease;
+}
+
+/* Hover: nền trượt xuống */
+.factory-button:hover::before {
+  top: 0;
+}
+
+/* Hover: chữ đổi màu */
 .factory-button:hover {
- background-color: white;
   color: #96422F;
 }
+
 @media (max-width: 768px) {
   .factory-content h2 {
     font-size: 36px;

@@ -27,15 +27,45 @@
   color: #3e1c0a;
 }
 .featured-projects .see-all-btn {
+  position: relative;
+  display: inline-block;
   background: transparent;
-  border: 1px solid #3e1c0a;
   color: #3e1c0a;
   padding: 8px 16px;
   border-radius: 5px;
+  border: 1px solid #3e1c0a;
   cursor: pointer;
   font-size: 14px;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  font-weight: 500;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  z-index: 0;
 }
+
+/* Nền trượt từ trên xuống */
+.featured-projects .see-all-btn::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #96422F;
+  z-index: -1; /* nền nằm dưới chữ */
+  transition: top 0.4s ease;
+}
+
+/* Khi hover: nền trượt xuống */
+.featured-projects .see-all-btn:hover::before {
+  top: 0;
+}
+
+/* Khi hover: đổi màu chữ */
+.featured-projects .see-all-btn:hover {
+  color: white;
+  border-color: #96422F;
+}
+
 .featured-projects .news-badge{
     position: absolute;
     top: 12px;
@@ -50,11 +80,7 @@
     width: 100px;
     text-align: center;
 }
-.featured-projects .see-all-btn:hover {
-  background-color: #96422F;
 
-  color: white;
-}
 
 .featured-projects .project-card {
   overflow: hidden;

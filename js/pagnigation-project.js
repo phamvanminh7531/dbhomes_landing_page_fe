@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  
 const gridSection = document.querySelector('.projects-section');
 const items = gridSection.querySelectorAll('.projects-section__item');
 const pagination = document.querySelector('.projects-section__pagination');
@@ -117,4 +118,5 @@ window.scrollTo({
 
   setupPagination();
   showPage(currentPage);
+  AOS.refresh(); 
 });
