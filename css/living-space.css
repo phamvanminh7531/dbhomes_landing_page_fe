@@ -22,6 +22,11 @@
   margin: 0 auto 60px;
   color: #4F3C22;
   font-size: 18px;
+  text-align: justify;
+
+}
+.living-space-section__description p{
+  text-align: center;
 }
 .living-space-section__grid {
   display: flex;
