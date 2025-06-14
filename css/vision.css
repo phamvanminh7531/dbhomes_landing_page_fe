@@ -146,6 +146,7 @@
 @media (max-width: 480px) {
   .vision__text h2 {
     font-size: 28px;
+    text-align: left;
   }
 
   .vision__stat strong {
@@ -154,5 +155,7 @@
 
   .vision__text p {
     font-size: 14px;
+    text-align: left;
+    text-align: justify;
   }
 }
