@@ -77,7 +77,43 @@ padding: 10px 20px 40px 20px;
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
+.partner-logos {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  cursor: grab;
+  padding: 16px 0;
+  scroll-behavior: smooth;
+}
 
+.partner-logos img {
+  flex: 0 0 auto;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Desktop mặc định: 7 logo */
+.partner-logos img {
+  width: calc((100% - 15px * 6) / 7);
+}
+
+/* Tablet: 4 logo */
+@media (max-width: 992px) {
+  .partner-logos img {
+    width: calc((100% - 15px * 3) / 4);
+  }
+  .partner-logos  {
+     margin-bottom: 20px;
+    margin-top: 36px;
+  }
+}
+
+/* Mobile: 3 logo */
+@media (max-width: 600px) {
+  .partner-logos img {
+    width: calc((100% - 15px * 2) / 3);
+  }
+}
 
 
 
@@ -92,7 +128,8 @@ padding: 10px 20px 40px 20px;
 
 @media (max-width: 600px) {
   .partners-section {
-    padding: 40px 0px;
+    padding:0px;
+    padding-top: 40px;
   }
 
   .partners-section .title {
@@ -102,6 +139,7 @@ padding: 10px 20px 40px 20px;
 
   .partners-logos {
     gap: 20px;
+    
   }
 
   .partners-logos img {

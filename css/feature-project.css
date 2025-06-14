@@ -196,6 +196,9 @@
 }
 
 @media (max-width: 768px) {
+  .featured-projects{
+        padding: 30px 20px;
+  }
 .featured-projects  .tab-menu {
     gap: 24px;
   }
