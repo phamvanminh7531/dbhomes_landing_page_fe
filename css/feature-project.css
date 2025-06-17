@@ -246,3 +246,26 @@
     grid-template-columns: 1fr; /* Mobile: 1 cột */
   }
 }
+@media (max-width: 320px) {
+.featured-projects .project-card  {
+    min-width: 0px; /* Mobile: 1 cột */
+    height: auto;
+  }
+}
+
+
+
+
+
+@media (max-width: 320px) {
+    .highlighted-projects swiper-slide img {
+        width: 240px;
+        height: 160px;
+    }
+    .slide-title{
+      font-size: 12px;
+    }
+    .slide-description{
+      font-size: 10px;
+    }
+}

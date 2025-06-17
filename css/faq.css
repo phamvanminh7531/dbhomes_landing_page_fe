@@ -111,6 +111,8 @@
   .faq-question {
     font-size: 14px;
     padding: 10px 14px;
+    display: flex;
+    gap:10px;
   }
 
   .faq-answer {

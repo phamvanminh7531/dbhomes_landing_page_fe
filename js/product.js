@@ -57,8 +57,8 @@ function getItemsPerPage() {
   const screenWidth = window.innerWidth;
 
   if (screenWidth <= 576) return 1;
-  if (screenWidth <= 768) return 2;
-  if (screenWidth <= 1024) return 4;
+  if (screenWidth > 576 && screenWidth <= 1024) return 6;
+  if (screenWidth > 1024 && screenWidth <= 1178) return 8;
   return 10;
 }
 
@@ -67,7 +67,7 @@ let currentPage = 0;
 
 function updateSlider() {
   const items = document.querySelectorAll('.product-section__item');
-
+  const itemsPerPage = getItemsPerPage(); 
   items.forEach(item => {
     item.classList.remove('show', 'fade-in');
   });
@@ -101,6 +101,7 @@ function slideLeft() {
 
 function slideRight() {
   const items = document.querySelectorAll('.product-section__item');
+    const itemsPerPage = getItemsPerPage(); 
   const maxPage = Math.floor((items.length - 1) / itemsPerPage);
   if (currentPage < maxPage) {
     currentPage++;

@@ -84,6 +84,7 @@ body, html {
 .navbar .main-content-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Container */

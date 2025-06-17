@@ -20,7 +20,6 @@
   display: flex;
   gap:12px;
     flex-wrap: wrap;
-  width:100%;
 }
 .filter-button {
   padding: 8px 16px;
@@ -46,7 +45,8 @@
 }
 .filter-tags-wrapper{
   display: flex;
-  gap:12px
+  gap:12px;
+  flex-wrap: wrap;
 }
 .filter-tag {
   background-color: #C8B497;
@@ -259,7 +259,7 @@ min-width: 140px;
   top: 100%;
   left: 0;
   display: none;
-  z-index: 9999; /* cao hơn nữa để nổi trên các thứ khác */
+  z-index: 9999;
 }
 
 .dropdown.open .dropdown-menu {

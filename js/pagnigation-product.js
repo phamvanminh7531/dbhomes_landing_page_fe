@@ -52,10 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let totalPages = Math.ceil(items.length / itemsPerPage);
   let pageLinks = [];
 
-  function getItemsPerPage() {
-    return window.innerWidth <= 768 ? 1 : 8;
-  }
+function getItemsPerPage() {
+  const screenWidth = window.innerWidth;
 
+  if (screenWidth <= 480) return 1;        
+  if (screenWidth <= 768) return 2;        
+  if (screenWidth <= 1024) return 3;       
+  return 4;                              
+}
 function setupPagination() {
   pagination.querySelectorAll('a:not(.product-listing-section__arrow)').forEach(el => el.remove());
   itemsPerPage = getItemsPerPage();

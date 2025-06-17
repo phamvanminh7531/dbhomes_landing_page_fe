@@ -159,3 +159,8 @@
     text-align: justify;
   }
 }
+@media (max-width: 320px){
+      .vision__stat strong {
+        font-size: 28px;
+    }
+} 

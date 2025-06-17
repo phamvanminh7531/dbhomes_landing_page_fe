@@ -92,3 +92,8 @@
 
   color: white;
 }
+@media (max-width: 320px) {
+.consultation-form-wrapper{
+  min-width:0px;
+}
+}
