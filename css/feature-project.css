@@ -251,6 +251,9 @@
     min-width: 0px; /* Mobile: 1 cột */
     height: auto;
   }
+  .featured-projects{
+    padding: 30px 0px;
+  }
 }
 
 

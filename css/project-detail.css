@@ -350,3 +350,33 @@ color: rgba(67, 35, 12, 0.6);
   margin-bottom: 20px;
 }
 }
+@media (min-width: 706px) and (max-width: 765px){
+.project-detail__image-row img {
+  width: 48.8%;
+}
+}
+@media (min-width: 655px) and (max-width: 705px){
+.project-detail__image-row img {
+  width: 48.7%;
+}
+}
+@media (min-width: 611px) and (max-width: 654px){
+.project-detail__image-row img {
+  width: 48.6%;
+}
+}
+@media (min-width: 600px) and (max-width: 610px){
+.project-detail__image-row img {
+  width: 48.5%;
+}
+}
+@media  (min-width: 348px) and  (max-width: 359px){
+.project-detail__image-row img {
+  width: 47.4%;
+}
+}
+@media   (max-width: 347px){
+.project-detail__image-row img {
+  width: 45%;
+}
+}
