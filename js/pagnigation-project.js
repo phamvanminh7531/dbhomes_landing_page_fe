@@ -12,8 +12,9 @@ const nextArrow = pagination.querySelector('.projects-section__arrow:last-child'
   let pageLinks = [];
 
   function getItemsPerPage() {
-    return window.innerWidth <= 768 ? 1 : 12;
-  }
+  return window.innerWidth <= 666 ? 1 :
+         window.innerWidth <= 768 ? 2 : 12;
+}
 
 function setupPagination() {
   pagination.querySelectorAll('a:not(.projects-section__arrow)').forEach(el => el.remove());

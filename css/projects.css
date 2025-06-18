@@ -232,9 +232,7 @@
   text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .projects-section__grid {
-    grid-template-columns: 1fr; /* 1 cột */
-  }
+
   .projects-section__title {
   font-size: 24px;
 }
@@ -265,4 +263,14 @@ min-width: 140px;
 .dropdown.open .dropdown-menu {
   display: block;
 }
+}
+@media (max-width: 768px) {
+  .projects-section__grid {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 666px) {
+  .projects-section__grid {
+  grid-template-columns: repeat(1, 1fr);
+  }
 }

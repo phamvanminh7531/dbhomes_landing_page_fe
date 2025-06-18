@@ -290,3 +290,15 @@
     font-size: 13px;
   }
 }
+
+@media (min-width: 768px) and (max-width:1200px){
+.footer-db-contact{
+  width:28%;
+}
+.footer-db-brand {
+    width: 26%;
+}
+.footer-db-top {
+  gap:0px;
+}
+}
