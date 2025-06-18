@@ -1,12 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Quét toàn bộ ảnh trong phần nội dung chính
-  document.querySelectorAll('.project-detail__main img').forEach(function(img) {
-    img.classList.add('glightbox');
-    // KHÔNG thêm data-title nữa -> để mặc định GLightbox lấy alt làm title
-  });
+// Tải GLightbox JS trước khi init (dùng dynamic import)
 
-  // Khởi tạo GLightbox
-  const lightbox = GLightbox({
-    selector: '.glightbox'
+function loadGlightboxScript(callback) {
+  const script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
+  script.onload = callback;
+  document.head.appendChild(script);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Load GLightbox trước khi sử dụng
+  loadGlightboxScript(function () {
+    document.querySelectorAll('.project-detail__main img').forEach(function(img) {
+      img.classList.add('glightbox');
+      // Không cần thêm data-title, GLightbox sẽ tự lấy alt làm title
+    });
+
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
   });
 });
