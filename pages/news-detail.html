@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="../css/feature-project.css" />
   <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
-
+<link rel="stylesheet" href="../css/share.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <meta name="robots" content="index, follow">
   <meta name="author" content="DBHomes">
-  <meta name="keywords" content="thiết kế nội thất, bất động sản, DBHomes, nhà đẹp">
+  <meta name="keywords" content="thiết kế nội thất, bất động sản, DBHomes, nhà đẹp" id="og-title">
   <meta property="og:title" content="Better Living - DB Homes">
   <meta property="og:description"
     content="Công ty DB Homes chuyên cung cấp dự án bất động sản và dịch vụ chất lượng cao.">
@@ -241,8 +241,8 @@
         </ul>
         <div class="project-detail__share">
           <span class="project-detail__share-label">Chia sẻ</span>
-          <img src="../images/fbicon.png" alt="Facebook" class="project-detail__share-icon" />
-          <img src="../images/shareicon.png" alt="Share" class="project-detail__share-icon" />
+          <img src="../images/fbicon.png" alt="Facebook" class="project-detail__share-icon"  id="facebook-share"/>
+          <img src="../images/shareicon.png" alt="Share" class="project-detail__share-icon" id="copy-share"  />
         </div>
       </aside>
 
@@ -407,13 +407,11 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="/js/project-list.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script>
-    const lightbox = GLightbox({ selector: '.glightbox' });
-  </script>
+
   <script src="../js/glightbox.js"></script>
   <script src="../js/animation-footer.js"></script>
    <script src="../js/navbar.js"></script>
+      <script src="../js/share.js"></script>
 </body>
 
 </html>
