@@ -7,11 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const facebookBtn = document.getElementById('facebook-share');
   const copyBtn = document.getElementById('copy-share');
 
-facebookBtn.addEventListener('click', function() {
-  const currentUrl = encodeURIComponent(window.location.href);
-  const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
-  window.open(facebookShareUrl, '_blank', 'width=600,height=400');
-});
+  // Thêm cursor pointer khi hover
+  facebookBtn.style.cursor = 'pointer';
+  copyBtn.style.cursor = 'pointer';
+
+  facebookBtn.addEventListener('click', function() {
+    const currentUrl = encodeURIComponent(window.location.href);
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+    window.open(facebookShareUrl, '_blank', 'width=600,height=400');
+  });
 
   copyBtn.addEventListener('click', function() {
     const currentUrl = window.location.href;
