@@ -99,16 +99,7 @@
             <input placeholder="Nội dung yêu cầu"/>
             <button type="submit">Gửi yêu cầu</button>
           </form>
-      <div id="successModal" class="modal-overlay">
-  <div class="modal-box">
-    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Sent" class="modal-icon" />
-    <h2 class="modal-title">Cảm ơn bạn!</h2>
-    <div class="modal-message">
- <p >Chúng tôi đã nhận được yêu cầu và sẽ liên hệ trong thời gian sớm nhất.</p>
-    </div>
-   
-    <button id="closeModalBtn" class="modal-button">Đóng</button>
-  </div>
+     
 </div>
         </div>
       </div>
@@ -224,7 +215,13 @@
           <h2 class="contact-section__title">Đồng hành cùng bạn<br>kiến tạo tổ ấm.</h2>
           <form class="contact-section__form">
             <input type="text" placeholder="Họ và Tên *" required />
-            <input type="tel" placeholder="Số điện thoại *" required />
+                    <input
+  type="text"
+  placeholder="Số điện thoại *"
+  required
+  pattern="^\+?[0-9]{10,12}$"
+ title="Số điện thoại phải từ 10 đến 12 chữ số, có thể bắt đầu bằng dấu +"
+/>
             <input type="text" placeholder="Tỉnh/Thành phố *" required />
             <input placeholder="Nội dung yêu cầu" rows="4"></textarea>
             <button type="submit">Gửi yêu cầu</button>
@@ -317,6 +314,16 @@
       </div>
     </div>
   </section>
+   <div id="successModal" class="modal-overlay">
+  <div class="modal-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Sent" class="modal-icon" />
+    <h2 class="modal-title">Cảm ơn bạn!</h2>
+    <div class="modal-message">
+ <p >Chúng tôi đã nhận được yêu cầu và sẽ liên hệ trong thời gian sớm nhất.</p>
+    </div>
+   
+    <button id="closeModalBtn" class="modal-button">Đóng</button>
+  </div>
   <script src="../js/navbar.js"></script>
   <script src="../js/animation-footer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
