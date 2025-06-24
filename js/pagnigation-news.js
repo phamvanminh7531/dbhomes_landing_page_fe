@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentPage = 1;
   let totalPages = Math.ceil(projectCards.length / itemsPerPage);
   let pageLinks = [];
-  function getItemsPerPage() {
-    return window.innerWidth <= 768 ? 1 : 12;
-  }
+function getItemsPerPage() {
+  return window.innerWidth <= 768 ? 1 : window.innerWidth <= 1024 ? 2 : 12;
+}
 
   function setupPagination() {
     pagination.querySelectorAll('a:not(.projects-section__arrow)').forEach(el => el.remove());

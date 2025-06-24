@@ -9,7 +9,9 @@
   flex-wrap: wrap;
 
 }
-
+.features-row .main-content-container{
+  flex-wrap: wrap;
+}
 .feature-box {
   flex: 1;
   min-width: 220px;
