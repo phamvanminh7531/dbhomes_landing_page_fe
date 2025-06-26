@@ -7,17 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .highlighted-projects .main-content-container {
   max-width: none;
   width: 100%;
-
 }
 
 .container {
-  /* max-width: 1200px; */
   margin: auto;
   display: flex;
   justify-content: center;
@@ -32,7 +29,6 @@
   margin-bottom: 10px;
   width: 70%;
   text-align: center;
-
 }
 
 .section-title {
@@ -42,9 +38,7 @@
   text-align: center;
   font-weight: 600;
   margin: 0;
-  /* Reset cả margin trên & dưới */
   padding: 0;
-  /* (Tùy chọn) Nếu có padding */
 }
 
 .section-desc {
@@ -56,19 +50,20 @@
   white-space: pre-line;
 }
 
-
 .highlighted-projects swiper-container {
   width: 100%;
   height: auto;
 }
 
-.highlighted-projectss swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1), opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
+/* Scale toàn bộ slide không active */
+.highlighted-projects swiper-slide {
+  transition: transform 0.4s ease;
   overflow: hidden;
+}
+
+.highlighted-projects swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.9);
+  transform-origin: center center;
 }
 
 .highlighted-projects swiper-slide img {
@@ -76,66 +71,33 @@
   height: 365px;
   object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: transform 0.8s ease;
 }
 
-/* Slide trung tâm */
 .highlighted-projects swiper-slide.swiper-slide-active img {
-
   z-index: 2;
   border-radius: 10px;
 }
 
-/* Slide hai bên */
-.highlighted-projects swiper-slide:not(.swiper-slide-active) img {
-  transform: scale(0.9);
-}
-
-/* Slide chính (active) */
-.highlighted-projects swiper-slide.swiper-slide-active .slide-info {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Slide hai bên (không active) */
-.highlighted-projects swiper-slide:not(.swiper-slide-active) .slide-info {
-  transform: scale(0.9);
-  margin-bottom: 19px;
-}
-
-/* Thêm transition để mượt */
-.slide-info {
-  transition: transform 0.6s ease, opacity 0.6s ease;
-}
-
-
 .slide-wrapper {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  height: 365px;
 }
 
 .slide-info {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 16px;
   width: 100%;
-  text-align: left;
-  transition: all 0.8s ease-in-out;
+  padding: 16px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-  /* lớp mờ trực tiếp */
   backdrop-filter: blur(4px);
-  /* tuỳ chọn: tạo hiệu ứng kính mờ */
-  border-radius: 0 0 8px 8px;
-  /* nếu muốn bo góc phần dưới */
-}
-
-.highlighted-projects swiper-slide:not(.swiper-slide-active) .slide-info {
-  padding: 16px 16px 36px 52px;
-  /* padding khác, ví dụ giảm padding trái phải */
-  /* Hoặc bạn có thể set padding-left khác để căn chỉnh chữ */
-  transition: all 0.8s ease-in-out;
+  border-radius: 0 0 10px 10px;
+  pointer-events: none;
+  z-index: 2;
+  transition: all 0.5s ease;
 }
 
 .slide-title {
@@ -145,7 +107,6 @@
   transition: all 0.4s ease;
   position: relative;
   text-align: left;
-  /* canh lề trái */
 }
 
 .slide-description {
@@ -157,9 +118,7 @@
   font-size: 14px;
   margin-top: 8px;
   text-align: left;
-  /* canh lề trái */
 }
-
 
 /* Hover Effect */
 .slide-wrapper:hover .slide-info {
@@ -175,6 +134,7 @@
   max-height: 200px;
 }
 
+/* Pagination */
 .custom-pagination {
   display: flex;
   justify-content: center;
@@ -196,6 +156,7 @@
   background-color: #96422F;
 }
 
+/* Arrow buttons */
 .arrow {
   cursor: pointer;
   font-size: 18px;
@@ -211,20 +172,15 @@
   width: 32px;
   height: 32px;
   line-height: 32px;
-  /* giúp căn giữa dọc */
   transition: border-color 0.3s, color 0.3s;
   font-weight: 300;
 }
-
 
 .arrow:hover {
   color: white;
   background-color: #96422F;
 }
 
-
-
-/* Nút chuyển */
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -306,7 +262,6 @@
   .section-desc {
     width: 100%;
     white-space: normal;
-
   }
 
   .slide-title {
@@ -326,7 +281,6 @@
 
   .project-card {
     flex: 0 0 33.33%;
-    /* để tối ưu chia 3 cột */
   }
 
   .highlighted-projects {
