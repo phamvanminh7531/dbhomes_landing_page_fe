@@ -8,7 +8,6 @@
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
 }
-
 body, html {
   scroll-behavior: smooth;
 }
@@ -75,6 +74,7 @@ body, html {
   margin-left: 24px;
   font-size: 16px;
   transition: opacity 0.2s ease;
+  font-weight: 600;
 }
 
 .nav-links a:hover {

@@ -255,7 +255,7 @@
 
         <div class="buttons" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000">
           <button class="btn outline">Xem thêm</button>
-          <button class="btn outline">Liên hệ ngay</button>
+          <button class="btn outline" id="contactBtn">Liên hệ ngay</button>
         </div>
 
         <div class="stats" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
@@ -635,10 +635,10 @@
   </section>
 
 
-  <section class="contact-section" style="background-image: url('images/Section9bg.png');">
-    <div class="main-content-container">
+  <section  id="contact"  class="contact-section" style="background-image: url('images/Section9bg.png');">
+    <div class="main-content-container"   >
       <div class="contact-section__overlay">
-        <div class="contact-section__container" data-aos="fade-up" data-aos-duration="1200">
+        <div   class="contact-section__container" data-aos="fade-up" data-aos-duration="1200">
           <h2 class="contact-section__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
             Đồng hành cùng bạn<br>kiến tạo tổ ấm.
           </h2>
@@ -667,13 +667,15 @@
           <div class="footer-db-brand">
             <img src="images/logofooter.png" alt="db homes logo" class="footer-db-logo" loading="lazy" />
 
-            <button class="footer-db-download">
-              Hồ sơ năng lực
-              <img src="images/downloadicon.png" alt="db homes logo" class="footer-db-download-icon" loading="lazy"
-                style="width: 25px;" />
-
-
-            </button>
+            <!-- Thành viên -->
+        <div class="footer-db-bottom">
+          <div class="footer-db-member">
+            <p>Một thành viên của</p>
+            <div class="footer-db-member-logo">
+              <img src="images/logofooter2.png" alt="Creative Interior Logo" loading="lazy" />
+            </div>
+          </div>
+        </div>
           </div>
 
           <!-- Cột 2: Liên kết -->
@@ -722,15 +724,7 @@
           </div>
         </div>
 
-        <!-- Thành viên -->
-        <div class="footer-db-bottom">
-          <div class="footer-db-member">
-            <p>Một thành viên của</p>
-            <div class="footer-db-member-logo">
-              <img src="images/logofooter2.png" alt="Creative Interior Logo" loading="lazy" />
-            </div>
-          </div>
-        </div>
+       
 
         <!-- Bản quyền -->
         <div class="footer-db-copyright">
@@ -748,6 +742,7 @@
   <script src="./js/swipercustom.js"></script>
   <script src="./js/hero-section.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+   <script src="./js/scroll-to-contact.js"></script>
   <script>
     AOS.init();
   </script>
