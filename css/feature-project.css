@@ -98,8 +98,11 @@
 }
 
 .featured-projects .project-info {
-  padding-top: 5px;
-  color: #43230C;
+    padding-top: 15px;
+    color: #43230C;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .featured-projects .project-info__title {
