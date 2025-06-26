@@ -44,6 +44,8 @@
   overflow: hidden;
   border-radius: 12px;
   height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .living-space-section__image-wrapper img {
@@ -141,4 +143,11 @@
   .living-space-section__grid {
     gap: 16px;
   }
+}
+@media (min-width:643px) {
+.living-space-section__image-wrapper img{
+  width:280px;
+  height:350px;
+  border-radius: 12px;
+}
 }
