@@ -53,9 +53,8 @@
 }
 #consultationForm input,
 #consultationForm textarea {
-  padding: 16px 0; /* tăng khoảng cách trên và dưới */
+  padding: 16px 12px; /* tăng khoảng cách trên và dưới */
   border: none;
-  border-bottom: 1px solid #b8a998;
   background-color: transparent;
   font-size: 14px;
   line-height: 1.4;
@@ -158,6 +157,33 @@
 .modal-button:hover {
   background: linear-gradient(to right, #7c321e, #9b5d4b);
 }
+.consultation-form-wrapper select {
+  padding: 16px 12px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: none;
+  color: rgba(67, 35, 12, 0.6);
+  width: 100%;
+  appearance: none; /* Ẩn kiểu native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%2343230C' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 8px 10px;
+}
+
+.consultation-form-wrapper select:invalid {
+  color: rgba(67, 35, 12, 0.6);
+}
+
+.consultation-form-wrapper select option[disabled] {
+  display: none;
+}
+
+
 
 /* Animation */
 @keyframes fadeSlideUp {
@@ -169,4 +195,30 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.consultation-section .input-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.consultation-section .input-wrapper input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 28px 12px 8px 12px;
+  outline: none;
+  width: 100%;
+  
+}
+
+.consultation-section .input-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12px; /* bắt đầu từ text */
+  width: calc(100% - 24px);
+  height: 1px;
+  background-color: #b8a998;
 }
