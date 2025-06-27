@@ -12,7 +12,7 @@
 .featured-projects .project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cột */
-  gap: 20px;
+  gap: 40px;
 }
 
 .featured-projects .featured-projects-header {
