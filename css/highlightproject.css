@@ -13,7 +13,11 @@
   max-width: none;
   width: 100%;
 }
-
+.highlighted-projects swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
   margin: auto;
   display: flex;
@@ -80,33 +84,47 @@
 }
 
 .slide-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  height: 365px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+.img-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit; /* kế thừa từ .img-container */
+  display: block;
+}
 .slide-info {
   position: absolute;
-bottom: 0px;
-    left: 24.6%;
-  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
   width: max-content;
-  max-width: calc(100% - 20px);
-  padding: 16px;
+  max-width: 100%;
+  padding: 10px 20px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
   backdrop-filter: blur(4px);
   border-radius: 10px;
   pointer-events: none;
   z-index: 2;
-  transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition: all 0.5s ease;
 }
+
+
 
 .slide-title {
   color: #fff;
@@ -215,8 +233,20 @@ bottom: 0px;
   .highlighted-projects swiper-slide img {
     width: 330px;
     height: 230px;
+      border-radius: 10px;
+  }
+ .highlighted-projects swiper-slide {
+    border-radius: 10px;
+    overflow: hidden;
   }
 
+    .slide-title {
+    font-size: 18px;
+  }
+
+  .slide-description {
+    font-size: 14px;
+  }
   .highlighted-projects {
     padding: 80px 0px;
   }
@@ -235,10 +265,14 @@ bottom: 0px;
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 40px;
+
+  .slide-title {
+    font-size: 16px;
   }
 
+  .slide-description {
+    font-size: 13px;
+  }
   .section-subtitle,
   .section-desc {
     font-size: 16px;
@@ -251,6 +285,7 @@ bottom: 0px;
   .slide-description {
     font-size: 12px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -286,7 +321,7 @@ bottom: 0px;
     width: 320px;
     height: 200px;
   }
-
+ 
   .project-card {
     flex: 0 0 33.33%;
   }
@@ -296,9 +331,6 @@ bottom: 0px;
   }
 }
 
-@media (max-width: 360px) {
-  .highlighted-projects swiper-slide img {
-    width: 280px;
-    height: 200px;
-  }
-}
+
+
+
