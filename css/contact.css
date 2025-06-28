@@ -295,3 +295,6 @@
   transform: none !important;
   transition: none !important;
 }
+.input-wrapper textarea{
+    width: 100%;
+}
