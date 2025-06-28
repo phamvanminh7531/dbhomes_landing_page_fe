@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector(".contact-section .custom-select-wrapper");
+  const wrapper = document.querySelector(".consultation-section .custom-select-wrapper");
   if (!wrapper) return;
 
   const trigger = wrapper.querySelector(".custom-select-trigger");
   const dropdown = wrapper.querySelector(".custom-select-dropdown");
-  const list = wrapper.querySelector("#provinceList");
-  const input = wrapper.querySelector("#provinceSearchInput");
-  const hiddenInput = wrapper.querySelector("#provinceSelectHidden");
+  const list = wrapper.querySelector("#provinceList2");
+  const input = wrapper.querySelector("#provinceSearchInput2");
+  const hiddenInput = wrapper.querySelector("#provinceSelectHidden2");
 
   let allProvinces = [];
 
@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => input.focus(), 10);
   });
 
-  // ✅ Chỉ đóng dropdown trong contact-section nếu click ra ngoài
+  // ✅ Chỉ đóng dropdown trong consultation-section nếu click ra ngoài
   document.addEventListener("click", function (e) {
-    if (!e.target.closest(".contact-section .custom-select-wrapper")) {
+    if (!e.target.closest(".consultation-section .custom-select-wrapper")) {
       dropdown.style.display = "none";
     }
   });

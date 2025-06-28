@@ -90,7 +90,7 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 0; /* Cho text nằm ở lớp cơ bản */
+  z-index: -1; /* Cho text nằm ở lớp cơ bản */
   transition: color 0.3s ease;
 }
 
@@ -103,7 +103,7 @@
   height: 100%;
   background-color: #96422F;
   border-radius: 30px; /* Match với nút để không bị vuông */
-  z-index: -1; /* Đẩy lớp nền xuống dưới chữ */
+  z-index: -2; /* Đẩy lớp nền xuống dưới chữ */
   transition: transform 0.6s ease;
   transform: translateY(0%);
 }
@@ -186,6 +186,74 @@
 .contact-section__custom-group select option {
   color: black;
   background-color: white;
+}
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  z-index:1000;
+}
+
+.custom-select-trigger {
+  padding: 28px 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.contact-section__form {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+.contact-section__container {
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-select-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 999;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.custom-select-dropdown input {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  color:black
+}
+
+.custom-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.custom-options li {
+  padding: 10px 12px;
+  cursor: pointer;
+  color: black;
+}
+
+.custom-options li:hover {
+  background: #f0f0f0;
 }
 
 @media (max-width: 768px) {

@@ -63,7 +63,7 @@
     <!-- Swiper container: dùng ảnh động (desktop) -->
     <swiper-container class="background-swiper" effect="fade" speed="5000" pagination="true"
       pagination-dynamic-bullets="true" autoplay-delay="3000" autoplay-disable-on-interaction="false"
-      data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="1200">
+      data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="1200"  data-aos-once="true">
 
       <swiper-slide>
         <img src="images/section1bg.png" class="bg-img" alt="Slide 1" />
@@ -96,7 +96,7 @@
   <section class="highlighted-projects" style="background-image: url('images/bg.png');">
     <div class="main-content-container">
       <div class="container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
-        data-aos-easing="ease-out-cubic"  data-aos-once="true">
+        data-aos-easing="ease-out-cubic" >
         <div class="section-subtitle">
           <p>Dự án nổi bật</p>
         </div>
@@ -668,10 +668,15 @@
                 data-aos-duration="1200" />
             </div>
             <div class="input-wrapper">
-          <select id="provinceSelect" aria-label="Tỉnh / Thành phố" required data-aos="fade-up" data-aos-delay="400"
-            data-aos-duration="1200">
-            <option value="" disabled selected>Tỉnh / Thành phố *</option>
-          </select>
+              <div class="custom-select-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+                <div class="custom-select-trigger">Tỉnh / Thành phố *</div>
+                <div class="custom-select-dropdown">
+                  <input type="text" id="provinceSearchInput" placeholder="Tìm tỉnh/thành..." />
+                  <ul id="provinceList" class="custom-options"></ul>
+                </div>
+                <input type="hidden" id="provinceSelectHidden" name="province" required>
+              </div>
+
             </div>
   
             <div class="contact-section__custom-group">
