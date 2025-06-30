@@ -104,24 +104,15 @@
                 <input type="hidden" id="provinceSelectHidden2" name="province" required>
               </div>
             </div>
-            <div class="consultation-section__custom-group">
-              <div class="input-wrapper">
-                <select aria-label="Chọn nội dung yêu cầu" id="requirementSelect2" required data-aos="fade-up"
-                  data-aos-delay="500" data-aos-duration="1200">
-                  <option value="" disabled selected>Chọn nội dung yêu cầu *</option>
-                  <option value="Tư vấn thiết kế">Tư vấn thiết kế</option>
-                  <option value="Giá gói">Giá gói</option>
-                  <option value="Thi công trong bao lâu">Thi công trong bao lâu</option>
-                  <option value="Báo giá trọn gói">Báo giá trọn gói</option>
-                  <option value="Thời gian hoàn thiện">Thời gian hoàn thiện</option>
-                  <option value="Khác">Khác</option>
-                </select>
-
-                <input type="text" id="otherInput2" name="otherRequirement2"
-                  placeholder="Vui lòng nhập yêu cầu của bạn..." style="display: none; margin-top: 20px"
-                  data-aos="fade-up" data-aos-delay="550" data-aos-duration="1200" />
-              </div>
-            </div>
+           <div class="input-wrapper">
+            <textarea placeholder="Nội dung yêu cầu: 
+            + Tư vấn thiết kế?
+            + Giá gói?
+            + Thi công trong bao lâu?" rows="4" data-aos="fade-up" data-aos-delay="500"
+              data-aos-duration="1200"></textarea>
+                </div>
+        
+  
             <button type="submit">Gửi yêu cầu</button>
           </form>
 
@@ -386,7 +377,7 @@
     <script src="../js/faq.js"></script>
     <script src="../js/map.js"></script>
     <script src="../js/contact.js"></script>
-    <script src="../js/consulting.js"></script>
+
     <script src="../js/load-provinces.js"></script>
        <script src="../js/load-provinces-consulting.js"></script>
     <script src="../js/noti.js"></script>

@@ -142,9 +142,6 @@
   color: black;
   background-color: white;
 }
-.contact-section__form select {
-  /* như trước */
-}
 
 /* Áp dụng cho dropdown options khi hiển thị */
 .contact-section__form select option {
