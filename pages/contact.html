@@ -76,7 +76,6 @@
       <div class="consultation-container">
         <div class="consultation-image">
           <img src="../images/consultingimg.png" alt="Phòng ngủ ấm áp" />
-
         </div>
         <div class="consultation-form-wrapper">
           <h2 class="consultation-title">
@@ -95,7 +94,7 @@
                 title="Số điện thoại phải từ 10 đến 12 chữ số, có thể bắt đầu bằng dấu +" />
             </div>
             <div class="input-wrapper">
-               <div class="custom-select-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+              <div class="custom-select-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
                 <div class="custom-select-trigger">Tỉnh / Thành phố *</div>
                 <div class="custom-select-dropdown">
                   <input type="text" id="provinceSearchInput2" placeholder="Tìm tỉnh/thành..." />
@@ -104,15 +103,13 @@
                 <input type="hidden" id="provinceSelectHidden2" name="province" required>
               </div>
             </div>
-           <div class="input-wrapper">
-            <textarea placeholder="Nội dung yêu cầu: 
-            + Tư vấn thiết kế?
-            + Giá gói?
-            + Thi công trong bao lâu?" rows="4" data-aos="fade-up" data-aos-delay="500"
-              data-aos-duration="1200"></textarea>
-                </div>
-        
-  
+            <div class="input-wrapper">
+              <textarea placeholder="Nội dung yêu cầu: 
+                        + Tư vấn thiết kế?
+                        + Giá gói?
+                        + Thi công trong bao lâu?" rows="4" data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="1200"></textarea>
+            </div>
             <button type="submit">Gửi yêu cầu</button>
           </form>
 
@@ -251,27 +248,28 @@
               </div>
 
             </div>
-  
+
             <div class="contact-section__custom-group">
-               <div class="input-wrapper">
-              <select aria-label="Chọn nội dung yêu cầu"  id="requirementSelect" required data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">
-                <option value="" disabled selected>Chọn nội dung yêu cầu *</option>
-                <option value="Tư vấn thiết kế">Tư vấn thiết kế</option>
-                <option value="Giá gói">Giá gói</option>
-                <option value="Thi công trong bao lâu">Thi công trong bao lâu</option>
-                <option value="Báo giá trọn gói">Báo giá trọn gói</option>
-                <option value="Thời gian hoàn thiện">Thời gian hoàn thiện</option>
-                <option value="Khác">Khác</option>
-              </select>
-  
-              <input type="text" id="otherInput" name="otherRequirement" placeholder="Vui lòng nhập yêu cầu của bạn..."
-                style="display: none; margin-top: 20px" data-aos="fade-up" data-aos-delay="550"
-                data-aos-duration="1200" />
-                </div>
+              <div class="input-wrapper">
+                <select aria-label="Chọn nội dung yêu cầu" id="requirementSelect" required data-aos="fade-up"
+                  data-aos-delay="500" data-aos-duration="1200">
+                  <option value="" disabled selected>Chọn nội dung yêu cầu *</option>
+                  <option value="Tư vấn thiết kế">Tư vấn thiết kế</option>
+                  <option value="Giá gói">Giá gói</option>
+                  <option value="Thi công trong bao lâu">Thi công trong bao lâu</option>
+                  <option value="Báo giá trọn gói">Báo giá trọn gói</option>
+                  <option value="Thời gian hoàn thiện">Thời gian hoàn thiện</option>
+                  <option value="Khác">Khác</option>
+                </select>
+
+                <input type="text" id="otherInput" name="otherRequirement"
+                  placeholder="Vui lòng nhập yêu cầu của bạn..." style="display: none; margin-top: 20px"
+                  data-aos="fade-up" data-aos-delay="550" data-aos-duration="1200" />
+              </div>
             </div>
-  
-  
-  
+
+
+
             <button type="submit" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1200">Gửi yêu cầu</button>
           </form>
         </div>
@@ -367,9 +365,10 @@
       <div class="modal-message">
         <p>Chúng tôi đã nhận được yêu cầu và sẽ liên hệ trong thời gian sớm nhất.</p>
       </div>
-
+  
       <button id="closeModalBtn" class="modal-button">Đóng</button>
     </div>
+  </div>
     <script src="../js/navbar.js"></script>
     <script src="../js/animation-footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -379,7 +378,7 @@
     <script src="../js/contact.js"></script>
 
     <script src="../js/load-provinces.js"></script>
-       <script src="../js/load-provinces-consulting.js"></script>
+    <script src="../js/load-provinces-consulting.js"></script>
     <script src="../js/noti.js"></script>
 </body>
 
