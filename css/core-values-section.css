@@ -65,7 +65,8 @@
 }
 
 .core-value-item img {
-
+  width:66px;
+  height:66px;
   margin-bottom: 16px;
 }
 
@@ -122,6 +123,12 @@
 
   .core-value-item img {
     max-width: 80px;
+  }
+   .core-values-grid.five-items .core-value-item:nth-child(4),
+  .core-values-grid.five-items .core-value-item:nth-child(5) {
+    grid-column: auto !important;
+    justify-self: unset !important;
+    transform: none !important;
   }
 }
 @media (max-width: 480px) {
