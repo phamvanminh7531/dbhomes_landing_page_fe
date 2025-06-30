@@ -72,6 +72,7 @@
 #consultationForm textarea {
   resize: vertical;
   min-height: 60px;
+  width:100%;
 }
 
 #consultationForm button {
@@ -210,9 +211,8 @@
   padding: 28px 12px 8px 12px;
   outline: none;
   width: 100%;
-  
-}
 
+}
 .consultation-section .input-wrapper::after {
   content: "";
   position: absolute;
@@ -227,4 +227,80 @@
     font-size: 14px;
     line-height: 1.4;
     padding:16px 12px;
+}
+
+.consultation-section .custom-select-wrapper {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  z-index:1000;
+}
+
+.consultation-section .custom-select-trigger {
+  padding: 28px 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.consultation-section .contact-section__form {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+.consultation-section .contact-section__container {
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.consultation-section .custom-select-dropdown {
+  background-image: url('../images/bg.png');
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  /* background: white; */
+  z-index: 999;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.consultation-section .custom-select-dropdown input {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  color:black
+}
+
+.consultation-section .custom-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 240px;
+  overflow-y: auto;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;
+}
+.consultation-section .custom-options::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
+}
+.consultation-section .custom-options li {
+  padding: 10px 12px;
+  cursor: pointer;
+  color: black;
+  font-size:14px;
+  color:rgba(67, 35, 12, 1)
+}
+
+.consultation-section .custom-options li:hover {
+  background: #fdfdfd;
 }
