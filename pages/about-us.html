@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/dbverse.css" />
   <link rel="stylesheet" href="../css/mission.css" />
   <link rel="stylesheet" href="../css/vision.css" />
+      <link rel="stylesheet" href="../css/loading.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="../css/core-values-section.css" />
   <link rel="stylesheet" href="../css/factory.css" />
@@ -32,7 +33,15 @@
 </head>
 
 <body>
-
+<div id="loading-screen">
+  <div class="logo-container">
+    <img src="../images/logo.svg" alt="Logo DB Homes" loading="lazy" class="logo" />
+    <div class="spinner">
+      <dotlottie-player src="https://lottie.host/ce235dc3-f831-4d0d-996f-c546cc5def1e/R00sZMkscT.lottie"
+        background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+    </div>
+  </div>
+</div>
   <header class="navbar">
     <div class="main-content-container">
       <div class="logo">
@@ -162,7 +171,6 @@
     <p class="core-values-subtitle" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1200">
       Giá trị cốt lõi
     </p>
-
     <div>
       <h2 class="core-values-title"
           data-aos="fade-up"
@@ -526,8 +534,14 @@
   <script>
     AOS.init();
   </script>
+    <script src="../js/core-value-grid.js"></script>
   <script src="../js/aos-custom.js"></script>
   <script src="../js/animation-footer.js"></script>
+   <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="../js/loading.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 

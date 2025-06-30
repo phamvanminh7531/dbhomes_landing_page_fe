@@ -53,14 +53,15 @@
 }
 
 .core-values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
   gap: 40px;
 }
 
 .core-value-item {
   background-color: transparent;
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 
 .core-value-item img {
@@ -73,6 +74,18 @@
   color: #96422f;
   font-weight: 600;
   margin-bottom: 12px;
+}
+.core-values-grid.five-items .core-value-item:nth-child(4) {
+  grid-column: 1 / span 1;
+  justify-self: center;
+  transform: translateX(50%) !important;
+}
+
+/* Item 5: nằm giữa item 2 và 3 */
+.core-values-grid.five-items .core-value-item:nth-child(5) {
+  grid-column: 2 / span 1;
+  justify-self: center;
+  transform: translateX(50%) !important;
 }
 
 .core-value-item p {
