@@ -243,7 +243,7 @@ color: rgba(67, 35, 12, 0.6);
   flex-direction: row;
 }
 .project-detail__caption p{
-  text-align: justify;
+  text-align: center;
 }
 .project-detail__image-row img {
   width: 48.5%;
@@ -372,7 +372,6 @@ color: rgba(67, 35, 12, 0.6);
   object-fit: cover; 
   display: block;
   border-radius: 8px;
-  
 }
 .project-detail__description a{
   text-decoration: none;
