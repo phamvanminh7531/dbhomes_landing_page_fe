@@ -394,6 +394,7 @@ color: rgba(67, 35, 12, 0.6);
   width:750px;
   object-fit: cover; 
   display: block;
+  border-radius: 8px;
 }
 @media (max-width: 768px) {
   .project-detail__figure img {
