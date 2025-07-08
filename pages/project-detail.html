@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../css/contact.css" />
   <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/project-detail.css" />
-   <link rel="stylesheet" href="../css/loading.css" />
+  <link rel="stylesheet" href="../css/loading.css" />
   <link rel="stylesheet" href="../css/partner.css" />
   <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -29,15 +29,15 @@
 </head>
 
 <body>
-<div id="loading-screen">
-  <div class="logo-container">
-    <img src="../images/logo.svg" alt="Logo DB Homes" loading="lazy" class="logo" />
-    <div class="spinner">
-      <dotlottie-player src="https://lottie.host/ce235dc3-f831-4d0d-996f-c546cc5def1e/R00sZMkscT.lottie"
-        background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+  <div id="loading-screen">
+    <div class="logo-container">
+      <img src="../images/logo.svg" alt="Logo DB Homes" loading="lazy" class="logo" />
+      <div class="spinner">
+        <dotlottie-player src="https://lottie.host/ce235dc3-f831-4d0d-996f-c546cc5def1e/R00sZMkscT.lottie"
+          background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+      </div>
     </div>
   </div>
-</div>
   <header class="navbar">
     <div class="main-content-container">
       <div class="logo">
@@ -67,7 +67,7 @@
     <div class="main-content-container">
     </div>
   </section>
-  <section class="project-detail" style="background-image: url('../images/bg.png');"> 
+  <section class="project-detail" style="background-image: url('../images/bg.png');">
     <div class="project-detail__container">
       <div class="project-detail__main">
         <div class="project-detail__breadcrumbs">
@@ -259,6 +259,10 @@
             </li>
           </ul>
         </div>
+        <figure class="project-detail__figure"><img alt="Nội thất căn hộ Celeste Rise hoàn thiện" class="bodytext-image glightbox"
+          src="/images/prj9.png" >
+        <figcaption>Nội thất căn hộ Celeste Rise hoàn thiện</figcaption>
+        </figure>
       </div>
       <aside class="project-detail__sidebar">
         <h3 class="project-detail__sidebar-title">Dự án xem nhiều nhất</h3>
@@ -297,19 +301,20 @@
         </div>
 
       </aside>
-
+       
+      </figure>
     </div>
   </section>
-  <section class="featured-projects" style="background-image: url('../images/bg.png');"ss>
+  <section class="featured-projects" style="background-image: url('../images/bg.png');" ss>
     <div class="main-content-container">
 
-     <div class="featured-projects__news-header" data-aos="fade-up" data-aos-duration="1000">
+      <div class="featured-projects__news-header" data-aos="fade-up" data-aos-duration="1000">
         <div class="featured-projects__news-title">
-             <h2>Dự án liên quan</h2>
+          <h2>Dự án liên quan</h2>
         </div>
         <button class="featured-projects__view-all desktop-only">Xem tất cả</button>
       </div>
-        <div class="project-list">
+      <div class="project-list">
         <div class="project-card">
           <div class="image-wrapper">
             <img src="../images/partenerimg.png" alt="Serene Luxe Residence" />
@@ -352,14 +357,14 @@
           </div>
         </div>
       </div>
-       <div class="featured-projects__view-all-wrapper mobile-only" data-aos="fade-up" data-aos-delay="300"
+      <div class="featured-projects__view-all-wrapper mobile-only" data-aos="fade-up" data-aos-delay="300"
         data-aos-duration="1000">
         <button class="featured-projects__view-all">Xem tất cả</button>
       </div>
     </div>
   </section>
 
-<section class="contact-section" style="background-image: url('../images/Section9bg.png');">
+  <section class="contact-section" style="background-image: url('../images/Section9bg.png');">
     <div class="main-content-container">
       <div class="contact-section__overlay">
         <div class="contact-section__container" data-aos="fade-up" data-aos-duration="1200">
@@ -376,7 +381,8 @@
                 data-aos-duration="1200" />
             </div>
             <div class="input-wrapper">
-              <select aria-label="Tỉnh / Thành phố" required data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+              <select aria-label="Tỉnh / Thành phố" required data-aos="fade-up" data-aos-delay="400"
+                data-aos-duration="1200">
                 <option value="" disabled selected>Tỉnh / Thành phố *</option>
                 <option value="An Giang">An Giang</option>
                 <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
@@ -443,34 +449,35 @@
                 <option value="Yên Bái">Yên Bái</option>
               </select>
             </div>
-  
+
             <div class="contact-section__custom-group">
-               <div class="input-wrapper">
-              <select aria-label="Chọn nội dung yêu cầu"  id="requirementSelect" required data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">
-                <option value="" disabled selected>Chọn nội dung yêu cầu *</option>
-                <option value="Tư vấn thiết kế">Tư vấn thiết kế</option>
-                <option value="Giá gói">Giá gói</option>
-                <option value="Thi công trong bao lâu">Thi công trong bao lâu</option>
-                <option value="Báo giá trọn gói">Báo giá trọn gói</option>
-                <option value="Thời gian hoàn thiện">Thời gian hoàn thiện</option>
-                <option value="Khác">Khác</option>
-              </select>
-  
-              <input type="text" id="otherInput" name="otherRequirement" placeholder="Vui lòng nhập yêu cầu của bạn..."
-                style="display: none; margin-top: 20px" data-aos="fade-up" data-aos-delay="550"
-                data-aos-duration="1200" />
-                </div>
+              <div class="input-wrapper">
+                <select aria-label="Chọn nội dung yêu cầu" id="requirementSelect" required data-aos="fade-up"
+                  data-aos-delay="500" data-aos-duration="1200">
+                  <option value="" disabled selected>Chọn nội dung yêu cầu *</option>
+                  <option value="Tư vấn thiết kế">Tư vấn thiết kế</option>
+                  <option value="Giá gói">Giá gói</option>
+                  <option value="Thi công trong bao lâu">Thi công trong bao lâu</option>
+                  <option value="Báo giá trọn gói">Báo giá trọn gói</option>
+                  <option value="Thời gian hoàn thiện">Thời gian hoàn thiện</option>
+                  <option value="Khác">Khác</option>
+                </select>
+
+                <input type="text" id="otherInput" name="otherRequirement"
+                  placeholder="Vui lòng nhập yêu cầu của bạn..." style="display: none; margin-top: 20px"
+                  data-aos="fade-up" data-aos-delay="550" data-aos-duration="1200" />
+              </div>
             </div>
-  
-  
-  
+
+
+
             <button type="submit" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1200">Gửi yêu cầu</button>
           </form>
         </div>
       </div>
     </div>
   </section>
- <section class="footer-db">
+  <section class="footer-db">
     <div class="main-content-container">
       <div class="footer-db-container">
         <div class="footer-db-top">
@@ -556,10 +563,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/animation-footer.js"></script>
-   <script src="../js/navbar.js"></script>
-      <script
-  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-  type="module"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="../js/loading.js"></script>
 </body>

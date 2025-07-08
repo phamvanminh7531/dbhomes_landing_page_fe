@@ -246,7 +246,7 @@ color: rgba(67, 35, 12, 0.6);
   text-align: justify;
 }
 .project-detail__image-row img {
-  width: 48.9%;
+  width: 48.5%;
   height: auto;
   display: block;
   border-radius: 8px;
@@ -384,4 +384,19 @@ color: rgba(67, 35, 12, 0.6);
 .project-detail__image-row img {
   width: 45%;
 }
+}
+
+.project-detail__figure{
+  text-align: center;
+}
+.project-detail__figure img{
+  height: 500px;
+  width:750px;
+  object-fit: cover; 
+  display: block;
+}
+@media (max-width: 768px) {
+  .project-detail__figure img {
+    width: 100%;
+  }
 }
