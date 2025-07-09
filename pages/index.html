@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagtail TOC with Tocbot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.34.0/dist/tocbot.css">
+    <link rel="stylesheet" href="../css/toc.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Table of Contents -->
+        <div class="toc-container">
+            <div class="toc-header">
+                <span class="toc-title">Xem thêm</span>
+                <button class="toc-toggle" onclick="toggleTOC()" aria-label="Toggle TOC">
+                    ☰
+                </button>
+            </div>
+            <nav class="toc show" id="toc"></nav>
+        </div>
+
+        <!-- Main Content (This would be your Wagtail Rich Text Field content) -->
+        <div class="content" id="content">
+            <h1 id="1">Tổng quan về dự án Glory Heights Vinhomes Grand Park</h1>
+            <p>Glory Heights Vinhomes Grand Park là một dự án bất động sản cao cấp tại Thành phố Hồ Chí Minh, mang đến
+                không gian sống hiện đại và tiện nghi cho cư dân.</p>
+
+            <h2 id="2">Layout căn hộ Glory Heights và lưu ý thiết kế theo từng loại diện tích</h2>
+            <p>Dự án cung cấp nhiều loại căn hộ với diện tích đa dạng, phù hợp với nhu cầu của từng gia đình.</p>
+
+            <h3 id="3">Căn hộ studio (27-34m²)</h3>
+            <p>Căn hộ studio được thiết kế tối ưu cho không gian nhỏ, phù hợp với người độc thân hoặc cặp đôi trẻ.</p>
+
+            <h3 id="4">Căn hộ 1 phòng ngủ (46-51m²)</h3>
+            <p>Loại căn hộ này có thiết kế hợp lý với không gian riêng tư cho phòng ngủ và khu vực sinh hoạt chung.</p>
+
+            <h3 id="5">Căn hộ 2 phòng ngủ (59-70m²)</h3>
+            <p>Phù hợp cho gia đình nhỏ với hai phòng ngủ riêng biệt và không gian sinh hoạt rộng rãi.</p>
+
+            <h3 id="6">Căn hộ 3 phòng ngủ (~81m²)</h3>
+            <p>Căn hộ lớn nhất trong dự án, phù hợp cho gia đình đông thành viên với không gian sống thoải mái.</p>
+
+            <h2 id="7">Phong cách thiết kế phù hợp với căn hộ Glory Heights</h2>
+            <p>Dự án áp dụng nhiều phong cách thiết kế hiện đại, tạo nên không gian sống đẳng cấp.</p>
+
+            <h3 id="8">Phong cách hiện đại sang trọng – Modern Luxury</h3>
+            <p>Sử dụng chất liệu cao cấp, màu sắc tinh tế và thiết kế tối giản để tạo nên vẻ đẹp sang trọng.</p>
+
+            <h3 id="9">Phong cách Nhật Bản tối giản có chiều sâu – Wabi Sabi</h3>
+            <p>Glory Heights Vinhomehi tiết, vui lòng liên hệ với đội ngũ chuyên gia của chúng tôi.</p>
+            <h2 id="2">Layout căn hộ Glory Heights và lưu ý thiết kế theo từng loại diện tích</h2>
+            <p>Dự án cung cấp nhiều loại căn hộ với diện tích đa dạng, phù hợp với nhu cầu của từng gia đình.</p>
+
+            <h3 id="3">Căn hộ studio (27-34m²)</h3>
+            <p>Căn hộ studio được thiết kế tối ưu cho không gian nhỏ, phù hợp với người độc thân hoặc cặp đôi trẻ.</p>
+
+            <h3 id="4">Căn hộ 1 phòng ngủ (46-51m²)</h3>
+            <p>Loại căn hộ này có thiết kế hợp lý với không gian riêng tư cho phòng ngủ và khu vực sinh hoạt chung.</p>
+
+            <h3 id="5">Căn hộ 2 phòng ngủ (59-70m²)</h3>
+            <p>Phù hợp cho gia đình nhỏ với hai phòng ngủ riêng biệt và không gian sinh hoạt rộng rãi.</p>
+
+            <h3 id="6">Căn hộ 3 phòng ngủ (~81m²)</h3>
+            <p>Căn hộ lớn nhất trong dự án, phù hợp cho gia đình đông thành viên với không gian sống thoải mái.</p>
+
+            <h2 id="7">Phong cách thiết kế phù hợp với căn hộ Glory Heights</h2>
+            <p>Dự án áp dụng nhiều phong cách thiết kế hiện đại, tạo nên không gian sống đẳng cấp.</p>
+
+            <h3 id="8">Phong cách hiện đại sang trọng – Modern Luxury</h3>
+            <p>Sử dụng chất liệu cao cấp, màu sắc tinh tế và thiết kế tối giản để tạo nên vẻ đẹp sang trọng.</p>
+
+            <h3 id="9">Phong cách Nhật Bản tối giản có chiều sâu – Wabi Sabi</h3>
+            <p>Glory Heights Vinhomehi tiết, vui lòng liên hệ với đội ngũ chuyên gia của chúng tôi.</p>
+            <h2 id="2">Layout căn hộ Glory Heights và lưu ý thiết kế theo từng loại diện tích</h2>
+            <p>Dự án cung cấp nhiều loại căn hộ với diện tích đa dạng, phù hợp với nhu cầu của từng gia đình.</p>
+
+            <h3 id="3">Căn hộ studio (27-34m²)</h3>
+            <p>Căn hộ studio được thiết kế tối ưu cho không gian nhỏ, phù hợp với người độc thân hoặc cặp đôi trẻ.</p>
+
+            <h3 id="4">Căn hộ 1 phòng ngủ (46-51m²)</h3>
+            <p>Loại căn hộ này có thiết kế hợp lý với không gian riêng tư cho phòng ngủ và khu vực sinh hoạt chung.</p>
+
+            <h3 id="5">Căn hộ 2 phòng ngủ (59-70m²)</h3>
+            <p>Phù hợp cho gia đình nhỏ với hai phòng ngủ riêng biệt và không gian sinh hoạt rộng rãi.</p>
+
+            <h3 id="6">Căn hộ 3 phòng ngủ (~81m²)</h3>
+            <p>Căn hộ lớn nhất trong dự án, phù hợp cho gia đình đông thành viên với không gian sống thoải mái.</p>
+
+            <h2 id="7">Phong cách thiết kế phù hợp với căn hộ Glory Heights</h2>
+            <p>Dự án áp dụng nhiều phong cách thiết kế hiện đại, tạo nên không gian sống đẳng cấp.</p>
+
+            <h3 id="8">Phong cách hiện đại sang trọng – Modern Luxury</h3>
+            <p>Sử dụng chất liệu cao cấp, màu sắc tinh tế và thiết kế tối giản để tạo nên vẻ đẹp sang trọng.</p>
+
+            <h3 id="9">Phong cách Nhật Bản tối giản có chiều sâu – Wabi Sabi</h3>
+            <p>Glory Heights Vinhomehi tiết, vui lòng liên hệ với đội ngũ chuyên gia của chúng tôi.</p>
+            <h2 id="2">Layout căn hộ Glory Heights và lưu ý thiết kế theo từng loại diện tích</h2>
+            <p>Dự án cung cấp nhiều loại căn hộ với diện tích đa dạng, phù hợp với nhu cầu của từng gia đình.</p>
+
+            <h3 id="3">Căn hộ studio (27-34m²)</h3>
+            <p>Căn hộ studio được thiết kế tối ưu cho không gian nhỏ, phù hợp với người độc thân hoặc cặp đôi trẻ.</p>
+
+            <h3 id="4">Căn hộ 1 phòng ngủ (46-51m²)</h3>
+            <p>Loại căn hộ này có thiết kế hợp lý với không gian riêng tư cho phòng ngủ và khu vực sinh hoạt chung.</p>
+
+            <h3 id="5">Căn hộ 2 phòng ngủ (59-70m²)</h3>
+            <p>Phù hợp cho gia đình nhỏ với hai phòng ngủ riêng biệt và không gian sinh hoạt rộng rãi.</p>
+
+            <h3 id="6">Căn hộ 3 phòng ngủ (~81m²)</h3>
+            <p>Căn hộ lớn nhất trong dự án, phù hợp cho gia đình đông thành viên với không gian sống thoải mái.</p>
+
+            <h2 id="7">Phong cách thiết kế phù hợp với căn hộ Glory Heights</h2>
+            <p>Dự án áp dụng nhiều phong cách thiết kế hiện đại, tạo nên không gian sống đẳng cấp.</p>
+
+            <h3 id="8">Phong cách hiện đại sang trọng – Modern Luxury</h3>
+            <p>Sử dụng chất liệu cao cấp, màu sắc tinh tế và thiết kế tối giản để tạo nên vẻ đẹp sang trọng.</p>
+
+            <h3 id="9">Phong cách Nhật Bản tối giản có chiều sâu – Wabi Sabi</h3>
+            <p>Glory Heights Vinhomehi tiết, vui lòng liên hệ với đội ngũ chuyên gia của chúng tôi.</p>
+            <h2 id="2">Layout căn hộ Glory Heights và lưu ý thiết kế theo từng loại diện tích</h2>
+            <p>Dự án cung cấp nhiều loại căn hộ với diện tích đa dạng, phù hợp với nhu cầu của từng gia đình.</p>
+
+            <h3 id="3">Căn hộ studio (27-34m²)</h3>
+            <p>Căn hộ studio được thiết kế tối ưu cho không gian nhỏ, phù hợp với người độc thân hoặc cặp đôi trẻ.</p>
+
+            <h3 id="4">Căn hộ 1 phòng ngủ (46-51m²)</h3>
+            <p>Loại căn hộ này có thiết kế hợp lý với không gian riêng tư cho phòng ngủ và khu vực sinh hoạt chung.</p>
+
+            <h3 id="5">Căn hộ 2 phòng ngủ (59-70m²)</h3>
+            <p>Phù hợp cho gia đình nhỏ với hai phòng ngủ riêng biệt và không gian sinh hoạt rộng rãi.</p>
+
+            <h3 id="6">Căn hộ 3 phòng ngủ (~81m²)</h3>
+            <p>Căn hộ lớn nhất trong dự án, phù hợp cho gia đình đông thành viên với không gian sống thoải mái.</p>
+
+            <h2 id="7">Phong cách thiết kế phù hợp với căn hộ Glory Heights</h2>
+            <p>Dự án áp dụng nhiều phong cách thiết kế hiện đại, tạo nên không gian sống đẳng cấp.</p>
+
+            <h3 id="8">Phong cách hiện đại sang trọng – Modern Luxury</h3>
+            <p>Sử dụng chất liệu cao cấp, màu sắc tinh tế và thiết kế tối giản để tạo nên vẻ đẹp sang trọng.</p>
+
+            <h3 id="9">Phong cách Nhật Bản tối giản có chiều sâu – Wabi Sabi</h3>
+            <p>Glory Heights Vinhomehi tiết, vui lòng liên hệ với đội ngũ chuyên gia của chúng tôi.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.34.0/dist/tocbot.min.js"></script>
+    <script src="../js/toc.js"></script>
+</body>
+
+</html>
