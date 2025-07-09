@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/ecosystem.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="css/footer.css" />
+   <link rel="stylesheet" href="css/contact-widget.css" />
   <link rel="stylesheet" href="css/dbverse.css" />
     <link rel="stylesheet" href="css/loading.css" />
   <link rel="stylesheet" href="css/feature-project.css" />
@@ -47,10 +48,29 @@
   </div>
 </div>
 <button id="scrollToTopBtn" title="Go to top">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path d="M12 4L6 10H10V20H14V10H18L12 4Z" fill="white"/>
-  </svg>
+  
+<i class="fa-solid fa-chevron-up" style="color: black;"></i>
 </button>
+<div class="contact-widget">
+  <div class="main-button" id="toggleMenu">
+    <i class="fa-solid fa-comment" style="color:white"></i>
+  </div>
+  <div class="menu" id="contactMenu">
+    <a  href="#" class="menu-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>Gọi Ngay</span>
+    </a>
+    <a href="#" target="_blank" class="menu-item">
+      <i class="fab fa-facebook-messenger"></i>
+      <span>Messenger</span>
+    </a>
+    <a  href="#" target="_blank" class="menu-item">
+      <img src="images/zalo.png" alt="Zalo" />
+      <span>Zalo</span>
+    </a>
+  </div>
+</div>
+
 
   <header class="navbar">
     <div class="main-content-container">
@@ -801,6 +821,7 @@
   <script src="./js/animtion-dbverse.js"></script>
   <script src="./js/hero-section.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./js/contact-widget.js"></script>
   <script src="./js/scroll-to-contact.js"></script>
     <script src="./js/load-provinces.js"></script>
   <script>
