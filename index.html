@@ -9,7 +9,7 @@
     content="Better Living - Công ty DB Homes chuyên cung cấp dự án bất động sản và dịch vụ chất lượng cao." />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/highlightproject.css" />
-  
+   <link rel="stylesheet" href="css/scrollbtn.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/partner.css" />
   <link rel="stylesheet" href="css/services.css" />
@@ -46,6 +46,12 @@
     </div>
   </div>
 </div>
+<button id="scrollToTopBtn" title="Go to top">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12 4L6 10H10V20H14V10H18L12 4Z" fill="white"/>
+  </svg>
+</button>
+
   <header class="navbar">
     <div class="main-content-container">
       <div class="logo">
@@ -745,8 +751,12 @@
               </div>
               <div>
                 <strong style="font-weight: 600;">Văn phòng Hà Nội</strong>
-                <p style="margin-top: 20px;">Số 42A, Lô Nhà Vườn, KĐT Mới Việt Hưng, P. Giang Biên, Q. Long Biên, TP. Hà
-                  Nội</p>
+            
+                target="_blank">
+                <p style="margin-top: 20px;">
+                  Số 42A, Lô Nhà Vườn, KĐT Mới Việt Hưng, P. Giang Biên, Q. Long Biên, TP. Hà Nội
+                </p>
+            
               </div>
             </div>
             <div class="footer-db-socials">
@@ -797,6 +807,7 @@
     AOS.init();
   </script>
   <script src="./js/aos-custom.js"></script>
+   <script src="./js/scroll-btn.js"></script>
   <script
   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
   type="module"></script>

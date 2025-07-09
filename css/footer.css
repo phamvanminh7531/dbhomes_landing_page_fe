@@ -478,3 +478,7 @@
     height: 16px;
   }
 }
+.footer-db-offices a{
+   text-decoration: none; 
+   color: inherit;
+}
