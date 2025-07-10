@@ -55,12 +55,14 @@ color: rgba(67, 35, 12, 0.6);
   width:815px;
 }
 
-.project-detail__breadcrumbs {
+.project-detail__breadcrumbs{
   font-size: 14px;
   color: #999;
   margin-bottom: 10px;
 }
-
+.project-detail__breadcrumbs a {
+   color: inherit;
+}
 .project-detail__title {
   font-size: 38px;
   font-weight: bold;
@@ -262,6 +264,7 @@ color: rgba(67, 35, 12, 0.6);
 .project-detail__description ul {
   padding-left: 20px;
   margin: 0;
+  margin-top: 12px;
   list-style-type: disc;
   color:#43230C;
 }
@@ -276,6 +279,7 @@ color: rgba(67, 35, 12, 0.6);
 
 .project-detail__description b {
   font-weight: 600;
+
    color:#43230C;
 }
 
@@ -363,8 +367,8 @@ color: rgba(67, 35, 12, 0.6);
 
 .project-detail__description figure{
   text-align: center;
-  margin-top: 5px;
-  margin-bottom:5px;
+  margin-top:20px;
+  margin-bottom: 36px;
 }
 .project-detail__description figure img{
   height: 500px;
@@ -374,7 +378,9 @@ color: rgba(67, 35, 12, 0.6);
   border-radius: 8px;
 }
 .project-detail__description a{
-  text-decoration: none;
+     text-decoration: underline !important;
+    color: #43230C;
+    font-weight: 900;
 }
 @media (max-width: 1145px) {
   .project-detail__container {
@@ -399,4 +405,15 @@ color: rgba(67, 35, 12, 0.6);
   .project-detail__item-text {
     max-width: 100%;
   }
+}
+.project-detail__description h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.project-detail__description h3{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
