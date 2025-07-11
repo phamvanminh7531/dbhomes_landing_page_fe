@@ -69,32 +69,40 @@
   max-height: 500px; /* hoặc auto nếu bạn dùng JS */
 }
 
-.dropdown-menu li {
-  position: relative; /* cần thiết để pseudo-element căn theo li */
+/* Cho li trong thẻ a */
+.dropdown-menu a > li {
   padding: 8px 16px;
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
+  list-style: none;
+  background: none;
 }
 
-.dropdown-menu li::after {
+/* Đường gạch dưới li */
+.dropdown-menu a > li::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 16px; /* cách lề trái */
-  width: 80%;  /* chiều dài đường gạch */
+  left: 16px;
+  width: 80%;
   height: 1px;
   background-color: #43230c47;
 }
 
-.dropdown-menu li:last-child::after {
-  display: none; /* không có gạch dưới ở item cuối */
+.dropdown-menu a:last-child > li::after {
+  display: none;
 }
-.dropdown-menu li:last-child {
-  border-bottom: none;
-}
-.dropdown-menu li:hover {
+
+.dropdown-menu a > li:hover {
   background-color: #f0f0f0;
 }
+
+/* Nếu cần xử lý hover toàn bộ a cũng highlight li */
+.dropdown-menu a:hover > li {
+  background-color: #f0f0f0;
+}
+
 .dropdown-menu {
     position: absolute;
     display: none;
@@ -113,10 +121,10 @@
 }
 
 
-.dropdown-menu li {
-  list-style: none;
-  background: none;
-
+.dropdown-menu a {
+  display: block;
+  text-decoration: none;
+  color: #43230C; /* thay vì none */
 }
 
 
@@ -199,7 +207,7 @@
 .projects-section__link {
   font-size: 16px;
   color: #43230C;
-  text-decoration: underline;
+  text-decoration: underline !important;
   font-weight: 500;
 }
 .projects-section__pagination {

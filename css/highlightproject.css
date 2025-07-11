@@ -73,7 +73,7 @@
 .highlighted-projects swiper-slide img {
   width: 576px;
   height: 365px;
-  object-fit: cover;
+  object-fit: none;
   border-radius: 10px;
   transition: transform 0.8s ease;
 }
