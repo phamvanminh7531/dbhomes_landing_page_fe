@@ -129,7 +129,8 @@
 .featured-projects  .image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: none;
+  object-fit: cover;
+  object-position: right bottom;
   display: block;
 }
 
