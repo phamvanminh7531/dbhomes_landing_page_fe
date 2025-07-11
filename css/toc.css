@@ -14,6 +14,9 @@
   width:200px;
   background-color: transparent;
 }
+.toc-container.closed .toc-header{
+    margin-bottom:0px;
+}
 /* Header with title + toggle button */
 .toc-header {
     display: flex;
