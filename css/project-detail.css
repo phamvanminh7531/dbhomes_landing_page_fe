@@ -375,6 +375,7 @@ color: rgba(67, 35, 12, 0.6);
   display: block;
   border-radius: 8px;
   height:100%;
+  margin-bottom:10px;
 }
 .project-detail__description img{
   width:100%;
