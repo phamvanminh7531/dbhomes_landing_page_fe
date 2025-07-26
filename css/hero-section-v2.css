@@ -1,6 +1,6 @@
 .hero-section-v2 {
   position: relative;
-  height: 100vh;
+  height: 100dvh; 
   color: white;
   font-weight: 400;
   display: flex;
@@ -15,7 +15,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
- height: 100dvh;
+height: 100%;
   object-fit: cover; 
   object-position: center bottom; 
   z-index: 0; 
