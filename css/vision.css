@@ -164,3 +164,16 @@
         font-size: 28px;
     }
 } 
+
+@media screen and (min-width: 2560px) {
+  .vision-section{
+    min-height: 0;
+  }
+}@media (min-width: 3840px) {
+.vision__stats {
+    max-width: none;
+  }
+  .vision__content{
+      max-width: none;
+  }
+}

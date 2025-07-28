@@ -304,3 +304,8 @@
 .consultation-section .custom-options li:hover {
   background: #fdfdfd;
 }
+@media (min-width: 3840px) { /* Màn hình 4K */
+ .consultation-container {
+    max-width: none;
+  }
+}

@@ -194,3 +194,8 @@ white-space: normal;
   }
   
 }
+@media (min-width: 3840px) { /* Màn hình 4K */
+.services-section .container {
+    max-width: none;
+  }
+}

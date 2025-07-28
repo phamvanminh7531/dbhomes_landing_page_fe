@@ -131,3 +131,8 @@
     height: auto;
   }
 }
+@media (min-width: 3840px) { /* Màn hình 4K */
+.faq-container {
+    max-width: none;
+  }
+}

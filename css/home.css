@@ -98,7 +98,11 @@ body, html {
   padding: 0 20px;
   width: 100%;
 }
-
+@media (min-width: 3840px) { 
+  .main-content-container {
+    max-width: 1800px;
+  }
+}
 /* Buttons */
 .buttons {
   display: flex;

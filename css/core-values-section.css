@@ -167,3 +167,9 @@
     margin-bottom: 12px;
   }
 }
+
+@media screen and (min-width: 2560px) {
+  .core-values-section{
+    min-height: 0;
+  }
+}
