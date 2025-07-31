@@ -93,6 +93,9 @@
   background-color: transparent;
   color: #4B3B39;
   border: 1px solid #4B3B39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-section .btn.outline::before {
